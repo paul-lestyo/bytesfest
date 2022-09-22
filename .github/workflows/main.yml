@@ -8,12 +8,14 @@ jobs:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2
 
-    - name: Build CSS
-      uses: actions/setup-node@v1
+    - name: Use NodeJS 16.x
+      uses: actions/setup-node@v2
       with:
         node-version: 16.x
-    - run: npm install
-    - run: npm run buildcss
+    - name: Build CSS
+      run: |
+        npm install
+        npm run buildcss
     
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.2

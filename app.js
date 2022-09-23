@@ -11,6 +11,7 @@ router.get('/', function(req, res) {
 }); 
 //add the router 
 app.use("/dist", express.static(__dirname + '/dist'));
+app.use("/assets", express.static(__dirname + '/assets'));
 app.use('/', router); 
 const port = process.env.port || 3000;
 app.listen(port); 

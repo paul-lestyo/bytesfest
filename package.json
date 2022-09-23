@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "buildcss": "npx tailwindcss -i ./src/input.css -o ./dist/output.css",
-    "start": "npm run buildcss && node app.js"
+    "start": "npm run buildcss && node app.js",
+    "hotreload": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
   "author": "",
   "license": "ISC",

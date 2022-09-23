@@ -4,33 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
+    <style></style>
   </head>
   <body class="font-poppins bg-slate-800 text-white transition-all">
     <!-- HERO SECTION START -->
 
     <!-- navigation-start -->
     <nav
-      class="w-full left-0 fixed z-50 h-20 sm:h-24 lg:h-28 bg-green-200 text-slate-600"
+      class="navigation w-full left-0 fixed z-50 h-20 sm:h-24 lg:h-28 text-white"
     >
       <!-- container -->
       <div class="h-full px-5 lg:px-0 lg:w-[1200px] mx-auto">
-        <div class="w-ful h-full flex justify-between bg-red-200">
-          <div class="lg:basis-3/12 h-full flex items-center bg-green-100">
+        <div class="w-ful h-full flex justify-between">
+          <div class="lg:basis-3/12 h-full flex items-center">
             <img src="" alt="" class="" />
-            <h1 class="font-semibold text-sm sm:text-lg lg:text-2xl">
+            <h1
+              class="font-semibold text-sm sm:text-lg lg:text-2xl tracking-wider text-shadow-hero-md"
+            >
               Bytesfest 2022
             </h1>
           </div>
-          <div class="lg:basis-4/12 h-full flex items-center bg-yellow-100">
+          <div class="lg:basis-5/12 h-full flex items-center">
             <!-- hamburger-menu -->
             <div class="lg:hidden w-10 h-10 bg-slate-500"></div>
             <ul
-              class="w-full h-full hidden lg:flex items-center justify-around bg-green-100"
+              class="w-full h-full hidden lg:flex items-center justify-around font-medium text-sm tracking-wider"
             >
-              <li class=""><a href="" class="">Home</a></li>
-              <li class=""><a href="" class="">Home</a></li>
-              <li class=""><a href="" class="">Home</a></li>
-              <li class=""><a href="" class="">Home</a></li>
+              <li class=""><a href="" class="text-shadow-hero-sm">Home</a></li>
+              <li class=""><a href="" class="text-shadow-hero-sm">About</a></li>
+              <li class="">
+                <a href="" class="text-shadow-hero-sm">Dangle</a>
+              </li>
+              <li class="">
+                <a href="" class="text-shadow-hero-sm">Competition</a>
+              </li>
+              <li class="">
+                <a href="" class="text-shadow-hero-sm">Payment</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -38,22 +48,27 @@
     </nav>
     <!-- navigation-end -->
 
-    <div class="w-full h-[100vh] bg-slate-700">
+    <div
+      class="w-full h-[100vh] bg-slate-900 bg-left bg-cover"
+      style="background-image: url('../assets/img/hero-img.png')"
+    >
       <!-- container -->
-      <div class="h-full px-5 lg:px-0 lg:w-[1200px] mx-auto bg-slate-800">
+      <div class="h-full px-5 lg:px-0 lg:w-[1200px] mx-auto">
         <div class="relative w-full h-full flex flex-col justify-center">
           <div class="w-full text-white text-center">
             <h3
-              class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold"
+              class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-shadow-hero-lg"
             >
               BUNCH OF YOUTH TECHNOTRACTION
             </h3>
             <h3
-              class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-3 md:mb-6"
+              class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-3 md:mb-6 text-shadow-hero-lg"
             >
               AND SPORT FESTIVAL
             </h3>
-            <p class="text-lg sm:text-xl md:text-xl mb-5 md:mb-9">
+            <p
+              class="text-lg sm:text-xl md:text-xl mb-5 md:mb-9 text-shadow-hero-lg"
+            >
               Aksi dan Kreasi Muda Indonesia
             </p>
             <!-- call-to-action  -->
@@ -147,5 +162,8 @@
       </div>
     </div>
     <!-- DANGLE SECTION END -->
+
+    <!-- script -->
+    <script src="../assets/js/script.js"></script>
   </body>
 </html>

@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
-    <style></style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<style>
+		:root {
+			--swiper-pagination-bullet-inactive-color: #D9D9D9; 
+			--swiper-pagination-bullet-inactive-opacity: 0.9;
+			--swiper-pagination-color: #4D00A9;
+		}
+	</style>
   </head>
   <body class="bg-slate-800 font-poppins text-white transition-all">
     <!-- HERO SECTION START -->
@@ -237,11 +244,43 @@
     </div>
     <!-- DANGLE SECTION END -->
 
+	<!-- Slider main container -->
+	<div class="bg-[#1b1b1b]">
+		<div class="py-36 text-center">
+			<h1 href="" class="text-5xl font-semibold text-shadow-hero-sm">Bytesfest Competition 2022</h1>
+		</div>
+		<div class="swiper">
+			<div class="swiper-wrapper pb-12">
+			  <div class="swiper-slide w-8" style="width: 66.666667%;">
+				<img class="w-full" src="/assets/img/lomba-podcast.png" />
+			  </div>
+			  <div class="swiper-slide" style="width: 66.666667%;">
+				<img class="w-full" src="/assets/img/lomba-web.png" />
+			  </div>
+			  <div class="swiper-slide" style="width: 66.666667%;">
+				<img class="w-full" src="/assets/img/lomba-fotografi.png" />
+			  </div>
+			  <div class="swiper-slide" style="width: 66.666667%;">
+				<img class="w-full" src="/assets/img/lomba-essai.png" />
+			  </div>
+			  <div class="swiper-slide" style="width: 66.666667%;">
+				<img class="w-full" src="/assets/img/lomba-poster.png" />
+			  </div>
+			</div>
+			<div class="swiper-pagination"></div>
+		  </div>
+
+		
+	</div>
+
     <!-- component -->
-    <div class="container mx-auto h-full w-full bg-[#1b1b1b]">
+    <div class="mx-auto h-full w-full bg-[#1b1b1b]">
+		<div class="pt-36 pb-12 text-center">
+			<h1 href="" class="text-5xl font-semibold text-shadow-hero-sm">Timeline Bytesfest</h1>
+		</div>
       <div class="wrap relative h-full overflow-hidden p-10">
         <div
-          class="border-2-2 absolute h-full border-l-[4px] border-[#D9D9D9] border-opacity-100"
+          class="border-2-2 absolute h-full lg:h-3/4 mt-3.5 border-l-[4px] border-[#D9D9D9] border-opacity-100"
           style="left: 50%"
         ></div>
         <!-- right timeline -->
@@ -250,7 +289,7 @@
         >
           <div class="order-1 flex w-5/12 justify-end">
             <h3
-              class="bg-[#3F0189] px-6 py-4 text-lg font-bold text-white shadow-xl"
+              class="bg-[#3F0189] px-6 py-4 text-lg font-normal text-white shadow-xl"
             >
               28 September - 8 Oktober 2022
             </h3>
@@ -259,7 +298,7 @@
             class="z-20 order-1 flex h-8 w-8 items-center rounded-full bg-[#3F0189] shadow-xl"
           ></div>
           <div class="order-1 flex w-5/12 justify-start">
-            <h3 class="text-lg font-bold text-white">
+            <h3 class="text-lg font-normal text-white">
               Registrasi Lomba Batch 1
             </h3>
           </div>
@@ -269,7 +308,7 @@
         >
           <div class="order-1 flex w-5/12 justify-end">
             <h3
-              class="bg-[#3F0189] px-6 py-4 text-lg font-bold text-white shadow-xl"
+              class="bg-[#3F0189] px-6 py-4 text-lg font-normal text-white shadow-xl"
             >
               9 Oktober - 13 Oktober 2022
             </h3>
@@ -278,7 +317,7 @@
             class="z-20 order-1 flex h-8 w-8 items-center rounded-full bg-[#3F0189] shadow-xl"
           ></div>
           <div class="order-1 flex w-5/12 justify-start">
-            <h3 class="text-lg font-bold text-white">
+            <h3 class="text-lg font-normal text-white">
               Pengumpulan Karya Batch 1
             </h3>
           </div>
@@ -288,7 +327,7 @@
         >
           <div class="order-1 flex w-5/12 justify-end">
             <h3
-              class="bg-[#3F0189] px-6 py-4 text-lg font-bold text-white shadow-xl"
+              class="bg-[#3F0189] px-6 py-4 text-lg font-normal text-white shadow-xl"
             >
               9 Oktober - 22 Oktober 2022
             </h3>
@@ -297,7 +336,7 @@
             class="z-20 order-1 flex h-8 w-8 items-center rounded-full bg-[#3F0189] shadow-xl"
           ></div>
           <div class="order-1 flex w-5/12 justify-start">
-            <h3 class="text-lg font-bold text-white">
+            <h3 class="text-lg font-normal text-white">
               Registrasi Lomba Batch 2
             </h3>
           </div>
@@ -306,7 +345,7 @@
           class="right-timeline mb-8 flex w-full items-center justify-between"
         >
           <div class="order-1 flex w-5/12 justify-end">
-            <h3 class="text-lg font-bold text-white">
+            <h3 class="text-lg font-normal text-white">
               Pengumpulan Karya Batch 2
             </h3>
           </div>
@@ -315,7 +354,7 @@
           ></div>
           <div class="order-1 flex w-5/12 justify-start">
             <h3
-              class="bg-[#3F0189] px-6 py-4 text-lg font-bold text-white shadow-xl"
+              class="bg-[#3F0189] px-6 py-4 text-lg font-normal text-white shadow-xl"
             >
               23 Oktober - 2 November 2022
             </h3>
@@ -325,7 +364,7 @@
           class="right-timeline mb-8 flex w-full items-center justify-between"
         >
           <div class="order-1 flex w-5/12 justify-end">
-            <h3 class="text-lg font-bold text-white">
+            <h3 class="text-lg font-normal text-white">
               Open Registrasi Seminar
             </h3>
           </div>
@@ -335,7 +374,7 @@
           ></div>
           <div class="order-1 flex w-5/12 justify-start">
             <h3
-              class="bg-[#3F0189] px-6 py-4 text-lg font-bold text-white shadow-xl"
+              class="bg-[#3F0189] px-6 py-4 text-lg font-normal text-white shadow-xl"
             >
               28 Oktober - 11 November 2022
             </h3>
@@ -345,7 +384,7 @@
           class="right-timeline mb-8 flex w-full items-center justify-between"
         >
           <div class="order-1 flex w-5/12 justify-end">
-            <h3 class="text-lg font-bold text-white">
+            <h3 class="text-lg font-normal text-white">
               Seminar, Awarding, & Puncak Acara
             </h3>
           </div>
@@ -354,7 +393,7 @@
           ></div>
           <div class="order-1 flex w-5/12 justify-start">
             <h3
-              class="bg-[#3F0189] px-6 py-4 text-lg font-bold text-white shadow-xl"
+              class="bg-[#3F0189] px-6 py-4 text-lg font-normal text-white shadow-xl"
             >
               12 November 2022
             </h3>
@@ -364,6 +403,7 @@
     </div>
 
     <!-- script -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="../assets/js/script.js"></script>
   </body>
 </html>

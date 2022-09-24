@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,7 +23,7 @@
               class="h-14 w-auto md:h-16"
             />
             <h1
-              class="text-shadow-hero-md text-sm font-semibold tracking-wider sm:text-lg lg:text-2xl"
+              class="text-shadow-hero-md text-sm font-semibold tracking-wider sm:text-lg lg:text-xl"
             >
               Bytes<span class="text-primary-75">fest</span> 2022
             </h1>
@@ -90,34 +90,57 @@
               Aksi dan Kreasi Muda Indonesia
             </p>
             <!-- call-to-action  -->
-            <button
-              class="rounded-sm bg-primary-0 px-10 py-3 font-semibold tracking-wide text-primary-900 md:px-16 md:py-4"
-            >
-              Daftar
-            </button>
+            <div class="flex w-full justify-center gap-3 md:gap-8">
+              <button
+                class="rounded-sm bg-primary-0 px-10 py-3 font-semibold tracking-wide text-primary-900 md:px-16 md:py-4"
+              >
+                Daftar
+              </button>
+              <a
+                href="#about"
+                class="flex items-center text-sm font-medium text-white underline decoration-primary-100 decoration-2 underline-offset-4 md:text-base"
+              >
+                Bytesfest itu apa?
+              </a>
+            </div>
           </div>
           <div
-            class="absolute -bottom-6 left-1/2 mx-auto h-20 w-full -translate-x-1/2 rounded-sm border-[0.5px] border-neutral-100 bg-neutral-900 px-5 pt-3 opacity-75 sm:h-24 sm:w-[480px] md:w-[520px] lg:bottom-24 lg:h-28 lg:w-[80%] lg:px-0"
+            class="absolute -bottom-4 left-1/2 mx-auto h-20 w-full -translate-x-1/2 rounded-sm border-[0.5px] border-neutral-200 bg-neutral-900 px-5 opacity-75 sm:h-24 sm:w-[480px] md:w-[520px] lg:-bottom-5 lg:h-28 lg:w-[400px] lg:px-0"
           >
-            <div class="flex h-1/2 w-full items-center justify-around text-2xl">
+            <div
+              class="relative -mt-4 flex h-full w-full items-center justify-around text-2xl"
+            >
+              <p
+                class="text-shadow-hero-sm absolute -top-4 text-xs tracking-wide text-white"
+              >
+                Dimulai dalam :
+              </p>
               <span class="relative"
-                ><p class="">00</p>
-                <p class="absolute text-xs">Days</p></span
+                ><p class="md:text-3xl">00</p>
+                <p class="absolute text-xs text-primary-25 md:text-sm">
+                  Hari
+                </p></span
               >
               <span class="">:</span>
               <span class="relative"
-                ><p class="">00</p>
-                <p class="absolute text-xs">Hours</p></span
+                ><p class="md:text-3xl">00</p>
+                <p class="absolute text-xs text-primary-25 md:text-sm">
+                  Jam
+                </p></span
               >
               <span class="">:</span>
               <span class="relative"
-                ><p class="">00</p>
-                <p class="absolute text-xs">Minutes</p></span
+                ><p class="md:text-3xl">00</p>
+                <p class="absolute text-xs text-primary-25 md:text-sm">
+                  Menit
+                </p></span
               >
               <span class="">:</span>
               <span class="relative"
-                ><p class="">00</p>
-                <p class="absolute text-xs">Second</p></span
+                ><p class="md:text-3xl">00</p>
+                <p class="absolute text-xs text-primary-25 md:text-sm">
+                  Detik
+                </p></span
               >
             </div>
           </div>
@@ -127,31 +150,40 @@
     <!-- HERO SECTION END -->
 
     <!-- ABOUT SECTION START -->
-    <div class="bg-slate-500 py-32">
+    <div id="about" class="bg-neutral-800 py-32">
       <!-- container -->
       <div class="mx-auto px-5 lg:w-[1200px] lg:px-0">
-        <div class="flex w-full flex-col bg-slate-400 lg:flex-row">
+        <div class="flex w-full flex-col lg:flex-row">
           <div class="mb-8 flex justify-center lg:mb-0 lg:basis-5/12">
             <!-- bytesfest-logo -->
             <div
-              class="h-40 w-32 bg-slate-600 sm:h-52 sm:w-44 md:h-64 md:w-52 lg:h-96 lg:w-72"
-            ></div>
+              class="flex h-40 w-32 justify-center sm:h-52 sm:w-44 md:h-64 md:w-52 lg:h-96 lg:w-72"
+            >
+              <img
+                src="/assets/img/logo-main.png"
+                alt="bytesfest about"
+                class="object-contain"
+              />
+            </div>
           </div>
 
           <div class="lg:flex lg:basis-7/12 lg:items-center">
-            <div class="bg-slate-600">
+            <div class="">
               <h3
-                class="mb-5 text-xl font-semibold sm:text-2xl md:text-3xl lg:text-4xl"
+                class="text-center text-xl font-semibold sm:text-2xl md:text-3xl lg:text-4xl"
               >
-                Bytesfest (Bunch of Youth Technottraction and Sport Festival)
+                Bytesfest
               </h3>
-              <p class="mb-5 sm:text-lg">
+              <h5 class="text-neutral-100">
+                Bunch of Youth Technottraction and Sport Festival
+              </h5>
+              <p class="mb-5 text-sm text-neutral-75">
                 Bytesfest merupakan event tahunan yang diselenggarakan oleh
                 himpunan Mahasiswa Prodi Pendidikan Teknik Informatika dan
                 Komputer Universitas Sebelas Maret. Bytesfest tahun 2022 yang
                 mengusung tema Akrisma (“Aksi dan Kreasi Muda Indonesia” ).
               </p>
-              <p class="sm:text-lg">
+              <p class="text-sm text-neutral-75">
                 Diharapkan dengan diselenggarakan acara ini dapat mengajak
                 generasi muda mengembangkan potensi, minat bakat dan ajang
                 kreatifitas yang mampu membentuk karakter yang berjiwa muda dan

@@ -1,6 +1,7 @@
 // ketika melakukan scrolling, beri background pada navigation
 const navbar = document.querySelector(".navigation");
 let mybutton = document.getElementById("btn-back-to-top");
+let tes = document.getElementById("tes");
 
 window.onscroll = function () {
   scrollFunction();

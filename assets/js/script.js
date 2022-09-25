@@ -1,7 +1,36 @@
 // ketika melakukan scrolling, beri background pada navigation
 const navbar = document.querySelector(".navigation");
-let mybutton = document.getElementById("btn-back-to-top");
-let tes = document.getElementById("tes");
+const mybutton = document.getElementById("btn-back-to-top");
+const modalParent = document.getElementById("modal-parent");
+const modal = document.getElementById("modal-gas");
+
+const countDownDay = document.getElementById("countDownDay");
+const countDownHour = document.getElementById("countDownHour");
+const countDownMinute = document.getElementById("countDownMinute");
+const countDownSecond = document.getElementById("countDownSecond");
+
+const linkLomba = {
+	podcast: {
+		registrasi: "https://dicoba1",
+		konfirmasi: "https://konfirmasi1"
+	},
+	web: {
+		registrasi: "https://dicoba2",
+		konfirmasi: "https://konfirmasi2"
+	},
+	fotografi: {
+		registrasi: "https://dicoba3",
+		konfirmasi: "https://konfirmasi3"
+	},
+	essai: {
+		registrasi: "https://dicoba4",
+		konfirmasi: "https://konfirmasi4"
+	},
+	poster: {
+		registrasi: "https://dicoba5",
+		konfirmasi: "https://konfirmasi5"
+	},
+}
 
 window.onscroll = function () {
   scrollFunction();
@@ -63,3 +92,43 @@ hamburgerMenu.addEventListener("click", function () {
     navigationMenu.classList.toggle("opacity-100");
   }, 100);
 });
+const countDownDate = new Date("Oct 25, 2022 00:00:00").getTime();
+const x = setInterval(function() {
+  const now = new Date().getTime();
+  const distance = countDownDate - now;
+    
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  countDownDay.innerHTML = ("0" + days).slice(-2)
+  countDownHour.innerHTML = ("0" + hours).slice(-2)
+  countDownMinute.innerHTML = ("0" + minutes).slice(-2)
+  countDownSecond.innerHTML = ("0" + seconds).slice(-2)
+    
+  if (distance < 0) {
+    clearInterval(x);
+	countDownDay.innerHTML = "00"
+	countDownHour.innerHTML = "00"
+	countDownMinute.innerHTML = "00"
+	countDownSecond.innerHTML = "00"
+  }
+}, 1000);
+
+
+
+document.getElementById("backdrop").addEventListener('click', () => {
+	modal.classList.toggle('opacity-100');
+	setTimeout(() => { modal.classList.toggle('hidden'); }, 300);
+});
+
+function daftarLomba(lomba) {
+	event.preventDefault();
+
+	console.log(linkLomba[lomba]);
+	document.getElementById("btnRegistrasi").setAttribute("href", linkLomba[lomba]['registrasi']);
+	document.getElementById("btnKonfirmasi").setAttribute("href", linkLomba[lomba]['konfirmasi']);
+	modal.classList.toggle('hidden');
+	setTimeout(() => { modal.classList.toggle('opacity-100') }, 300);
+}

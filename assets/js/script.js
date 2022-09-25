@@ -154,5 +154,5 @@ function daftarLomba(lomba) {
   modal.classList.toggle("hidden");
   setTimeout(() => {
     modal.classList.toggle("opacity-100");
-  }, 300);
+  }, 100);
 }

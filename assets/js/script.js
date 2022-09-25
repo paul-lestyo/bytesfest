@@ -51,3 +51,15 @@ const swiper = new Swiper(".swiper", {
     clickable: true,
   },
 });
+
+// navigation for mobile
+let hamburgerMenu = document.querySelector("#hamburger");
+let navigationMenu = document.querySelector("#navigation-menu");
+
+hamburgerMenu.addEventListener("click", function () {
+  navigationMenu.classList.toggle("hidden");
+  navigationMenu.classList.toggle("flex");
+  setTimeout(() => {
+    navigationMenu.classList.toggle("opacity-100");
+  }, 100);
+});

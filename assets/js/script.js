@@ -288,7 +288,7 @@ setTimeout(() => {
   backdropBg.classList.remove("hidden");
 }, 3200);
 setTimeout(() => {
-  backdropBg.classList.remove("backdrop-blur-xl");
+  backdropBg.classList.remove("backdrop-blur-lg");
   backdropBg.classList.add("backdrop-blur-0");
 }, 3500);
 
@@ -298,3 +298,7 @@ setTimeout(() => {
   startAnimationBg.classList.add("hidden");
   lightBg.classList.add("opacity-0");
 }, 5500);
+
+setTimeout(() => {
+  lightBg.classList.add("hidden");
+}, 6000);

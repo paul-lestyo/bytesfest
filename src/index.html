@@ -35,9 +35,70 @@
     <link rel="icon" type="image/x-icon" href="/assets/img/logo-mini.png" />
   </head>
   <body
-    class="z-40 overflow-x-hidden bg-neutral-900 font-poppins text-white transition-all"
+    class="relative z-40 overflow-x-hidden bg-neutral-900 font-poppins text-white transition-all"
   >
     <!-- LOAD ANIMATION START -->
+    <!-- <div class="start-animation-bg fixed z-[100] h-full w-full bg-neutral-900"> -->
+    <!-- loading-state -->
+    <!-- <div
+        class="loading-container flex h-full w-full items-center justify-center opacity-100"
+      >
+        <div class="flex w-8/12 flex-col lg:max-w-3xl">
+          <div
+            class="loading-line mb-4 h-[2px] w-full bg-primary-50 md:mb-6"
+          ></div>
+          <p class="text-center tracking-wide">
+            Loading <span class="loading-value">0</span>%
+          </p>
+        </div>
+      </div> -->
+    <!-- proudly-present-state -->
+    <!-- <div
+        class="proudly-present-container flex h-full w-full items-center opacity-0"
+      >
+        <div class="w-full text-center">
+          <h1
+            class="proudly-present-title mb-2 text-3xl opacity-0 transition-all duration-700 ease-in sm:mb-3 sm:text-4xl"
+          >
+            HMP MIKROPTIK
+          </h1>
+          <p
+            class="proudly-present-subtitle text-sm tracking-wider text-neutral-50 opacity-0 transition-all duration-700 ease-in sm:text-base"
+          >
+            Proudly Presents
+          </p>
+        </div>
+      </div> -->
+    <!-- bytesfest-title-state -->
+    <!-- <div
+        class="bytesfest-start-container flex h-full w-full items-center justify-center opacity-0 transition-all duration-300"
+      >
+        <div
+          class="flex w-full flex-col items-center justify-center px-5 text-center md:flex-row md:gap-x-1 md:text-left lg:gap-x-4"
+        >
+          <img
+            src="/assets/img/logo-main.png"
+            alt=""
+            class="mb-2 h-32 w-auto sm:h-40 md:mb-0 md:h-48 lg:h-56"
+          />
+          <h1
+            class="text-2xl font-semibold tracking-wider text-primary-0 sm:text-3xl md:text-5xl lg:text-6xl"
+          >
+            Bytes<span class="text-primary-75">fest</span>
+            <span
+              class="bg-gradient-to-r from-primary-100 to-cyan-300 bg-clip-text text-transparent"
+              >2022</span
+            >
+          </h1>
+        </div>
+      </div> -->
+    <!-- <div
+        class="backdrop-bg fixed top-0 left-0 z-50 hidden h-full w-full backdrop-blur-xl transition-all duration-1000"
+      ></div> -->
+    <!-- </div> -->
+    <!-- <div
+      class="light-bg fixed z-[75] h-full w-full bg-white transition-all duration-500"
+    ></div> -->
     <!-- LOAD ANIMATION END -->
 
     <!-- HERO SECTION START -->
@@ -56,7 +117,7 @@
               class="h-14 w-auto md:h-16"
             />
             <h1
-              class="text-shadow-hero-md text-sm font-semibold tracking-wider text-primary-0 sm:text-lg lg:text-xl"
+              class="text-sm font-semibold tracking-wider text-primary-0 sm:text-lg lg:text-xl"
             >
               Bytes<span class="text-primary-75">fest</span>
               <span
@@ -96,37 +157,38 @@
                 <li class="">
                   <a
                     href="#home"
-                    class="text-shadow-hero-sm decoration-primary-100 decoration-2 underline-offset-4 hover:underline"
+                    class="decoration-primary-100 decoration-2 underline-offset-4 hover:underline"
                     >Home</a
                   >
                 </li>
                 <li class="">
                   <a
                     href="#about"
-                    class="text-shadow-hero-sm decoration-primary-100 decoration-2 underline-offset-4 hover:underline"
+                    class="decoration-primary-100 decoration-2 underline-offset-4 hover:underline"
                     >About</a
                   >
                 </li>
                 <li class="">
                   <a
                     href="#dangle"
-                    class="text-shadow-hero-sm decoration-primary-100 decoration-2 underline-offset-4 hover:underline"
+                    class="decoration-primary-100 decoration-2 underline-offset-4 hover:underline"
                     >Dangle</a
                   >
                 </li>
                 <li class="">
                   <a
                     href="#competition"
-                    class="text-shadow-hero-sm decoration-primary-100 decoration-2 underline-offset-4 hover:underline"
+                    class="decoration-primary-100 decoration-2 underline-offset-4 hover:underline"
                     >Competition</a
                   >
                 </li>
                 <li class="">
                   <button
                     onclick="submissionLomba()"
-                    class="text-shadow-hero-sm decoration-primary-100 decoration-2 underline-offset-4 hover:underline"
-                    >Submission</button
+                    class="decoration-primary-100 decoration-2 underline-offset-4 hover:underline"
                   >
+                    Submission
+                  </button>
                 </li>
               </ul>
             </div>
@@ -191,7 +253,7 @@
             class="absolute -bottom-4 left-1/2 mx-auto h-20 w-full -translate-x-1/2 rounded-sm border-[0.5px] border-neutral-200 bg-neutral-900 px-5 opacity-75 sm:h-24 sm:w-[480px] md:w-[520px] lg:-bottom-5 lg:h-28 lg:w-[400px] lg:px-0"
           >
             <p
-              class="text-shadow-hero-sm absolute w-full -translate-y-8 text-center text-xs tracking-wide text-white"
+              class="absolute w-full -translate-y-8 text-center text-xs tracking-wide text-white"
             >
               Dimulai dalam :
             </p>
@@ -343,7 +405,7 @@
               </div>
               <div class="">
                 <p
-                  class="text-shadow-hero-sm mb-5 text-sm leading-relaxed text-neutral-50 md:leading-loose"
+                  class="mb-5 text-sm leading-relaxed text-neutral-50 md:leading-loose"
                 >
                   Mahkota Dangle melambangkan kejayaan dan kemakmuran dari acara
                   Bytesfest yang rutin diadakan setiap tahunnya, kacamatanya
@@ -352,7 +414,7 @@
                   keahlian yang ditempatkan dengan tepat.
                 </p>
                 <p
-                  class="text-shadow-hero-sm text-sm leading-relaxed text-neutral-50 md:leading-loose"
+                  class="text-sm leading-relaxed text-neutral-50 md:leading-loose"
                 >
                   Baju saman Dangle memberi makna seni yang melekat dan
                   melestarikan jiwa seni. Truntum mampu untuk tumbuh dan
@@ -784,7 +846,7 @@
           ></div>
           <div class="order-1 flex w-5/12 justify-start">
             <h3
-              class="md:px-3 text-xs border-l-4 border-primary-400 bg-primary-75 px-2 py-2 font-normal text-neutral-900 shadow-xl md:py-3 md:text-sm"
+              class="border-l-4 border-primary-400 bg-primary-75 px-2 py-2 text-xs font-normal text-neutral-900 shadow-xl md:px-3 md:py-3 md:text-sm"
             >
               <b>23</b> Oktober - <b>27</b> Oktober 2022
             </h3>
@@ -806,7 +868,7 @@
           ></div>
           <div class="order-1 flex w-5/12 justify-start">
             <h3
-              class="md:px-3 text-xs border-l-4 border-primary-400 bg-primary-75 px-2 py-2 font-normal text-neutral-900 shadow-xl md:py-3 md:text-sm"
+              class="border-l-4 border-primary-400 bg-primary-75 px-2 py-2 text-xs font-normal text-neutral-900 shadow-xl md:px-3 md:py-3 md:text-sm"
             >
               <b>28</b> Oktober - <b>11</b> November 2022
             </h3>
@@ -980,7 +1042,7 @@
             <!-- close-button -->
             <button
               id="close-button-submission"
-              class="group absolute right-2 top-2 text-neutral-400 z-50"
+              class="group absolute right-2 top-2 z-50 text-neutral-400"
             >
               <img
                 src="/assets/img/icons/icons8-close-24.png"
@@ -1020,14 +1082,14 @@
                   target="_blank"
                   class="inline-block rounded-sm bg-neutral-600 px-6 py-3 text-neutral-0 shadow-lg"
                 >
-					Submission Batch 1
+                  Submission Batch 1
                 </a>
                 <a
                   id="btnSubmissionBatch2"
                   target="_blank"
                   class="inline-block border-neutral-300 bg-primary-0 py-3 font-medium text-neutral-600 shadow-lg"
                 >
-					Submission Batch 2
+                  Submission Batch 2
                 </a>
               </div>
             </div>
@@ -1058,7 +1120,7 @@
             <!-- close-button -->
             <button
               id="close-button"
-              class="group absolute right-2 top-2 text-neutral-400 z-50"
+              class="group absolute right-2 top-2 z-50 text-neutral-400"
             >
               <img
                 src="/assets/img/icons/icons8-close-24.png"
@@ -1115,6 +1177,7 @@
     </div>
 
     <!-- script -->
+    <script src="../dist/anime.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="../assets/js/script.js"></script>
   </body>

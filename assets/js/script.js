@@ -85,8 +85,8 @@ const swiper = new Swiper(".swiper", {
     clickable: true,
   },
   navigation: {
-	nextEl: ".swiper-button-next",
-	prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
 
@@ -207,95 +207,94 @@ function submissionLomba() {
 // SCRIPT DI BAWAH INI UNTUK LOAD ANIMATION START
 
 // anime-js
+// loading - animation - script
 
-// loading-animation-script
+loadingText = document.querySelector(".loading-value");
+loadingContainer = document.querySelector(".loading-container");
+loadingValue = {
+  progress: 0,
+};
 
-// loadingText = document.querySelector(".loading-value");
-// loadingContainer = document.querySelector(".loading-container");
-// loadingValue = {
-//   progress: 0,
-// };
+const loadingTimeline = anime.timeline({});
 
-// const loadingTimeline = anime.timeline({});
+anime({
+  targets: loadingValue,
+  progress: 100,
+  easing: "easeInQuad",
+  duration: 800, // loading-duration
+  round: 1,
+  update: () => {
+    loadingText.innerHTML = loadingValue.progress;
+    anime({
+      targets: ".loading-line",
+      width: loadingValue.progress + "%",
+      duration: 0,
+    });
+  },
+  complete: () => {
+    loadingContainer.classList.add("hidden");
+  },
+});
 
-// anime({
-//   targets: loadingValue,
-//   progress: 100,
-//   easing: "easeInQuad",
-//   duration: 800, // loading-duration
-//   round: 1,
-//   update: () => {
-//     loadingText.innerHTML = loadingValue.progress;
-//     anime({
-//       targets: ".loading-line",
-//       width: loadingValue.progress + "%",
-//       duration: 0,
-//     });
-//   },
-//   complete: () => {
-//     loadingContainer.classList.add("hidden");
-//   },
-// });
+const proudlyPresentContainer = document.querySelector(
+  ".proudly-present-container"
+);
+const proudlyPresentTitle = document.querySelector(".proudly-present-title");
+const proudlyPresentSubtitle = document.querySelector(
+  ".proudly-present-subtitle"
+);
 
-// const proudlyPresentContainer = document.querySelector(
-//   ".proudly-present-container"
-// );
-// const proudlyPresentTitle = document.querySelector(".proudly-present-title");
-// const proudlyPresentSubtitle = document.querySelector(
-//   ".proudly-present-subtitle"
-// );
+setTimeout(() => {
+  proudlyPresentContainer.classList.remove("opacity-0");
+  proudlyPresentContainer.classList.add("opacity-100");
+}, 900);
 
-// setTimeout(() => {
-//   proudlyPresentContainer.classList.remove("opacity-0");
-//   proudlyPresentContainer.classList.add("opacity-100");
-// }, 900);
+// proudly-present-appear
+setTimeout(() => {
+  proudlyPresentTitle.classList.remove("opacity-0");
+  proudlyPresentTitle.classList.add("opacity-100");
+}, 900);
+setTimeout(() => {
+  proudlyPresentSubtitle.classList.remove("opacity-0");
+  proudlyPresentSubtitle.classList.add("opacity-100");
+}, 900);
 
-// // proudly-present-appear
-// setTimeout(() => {
-//   proudlyPresentTitle.classList.remove("opacity-0");
-//   proudlyPresentTitle.classList.add("opacity-100");
-// }, 900);
-// setTimeout(() => {
-//   proudlyPresentSubtitle.classList.remove("opacity-0");
-//   proudlyPresentSubtitle.classList.add("opacity-100");
-// }, 900);
+// proudly-present-disappear
+setTimeout(() => {
+  proudlyPresentTitle.classList.remove("opacity-100");
+  proudlyPresentTitle.classList.add("opacity-0");
+}, 2500);
+setTimeout(() => {
+  proudlyPresentSubtitle.classList.remove("opacity-100");
+  proudlyPresentSubtitle.classList.add("opacity-0");
+}, 2500);
 
-// // proudly-present-disappear
-// setTimeout(() => {
-//   proudlyPresentTitle.classList.remove("opacity-100");
-//   proudlyPresentTitle.classList.add("opacity-0");
-// }, 2500);
-// setTimeout(() => {
-//   proudlyPresentSubtitle.classList.remove("opacity-100");
-//   proudlyPresentSubtitle.classList.add("opacity-0");
-// }, 2500);
+setTimeout(() => {
+  proudlyPresentContainer.classList.add("hidden");
+}, 3200);
 
-// setTimeout(() => {
-//   proudlyPresentContainer.classList.add("hidden");
-// }, 3200);
+// bytefest-title-state
+const bytesfestStartContainer = document.querySelector(
+  ".bytesfest-start-container"
+);
+setTimeout(() => {
+  bytesfestStartContainer.classList.remove("opacity-0");
+  bytesfestStartContainer.classList.add("opacity-100");
+}, 3200);
 
-// // bytefest-title-state
-// const bytesfestStartContainer = document.querySelector(
-//   ".bytesfest-start-container"
-// );
-// setTimeout(() => {
-//   bytesfestStartContainer.classList.remove("opacity-0");
-//   bytesfestStartContainer.classList.add("opacity-100");
-// }, 3200);
+const backdropBg = document.querySelector(".backdrop-bg");
 
-// const backdropBg = document.querySelector(".backdrop-bg");
+setTimeout(() => {
+  backdropBg.classList.remove("hidden");
+}, 3200);
+setTimeout(() => {
+  backdropBg.classList.remove("backdrop-blur-xl");
+  backdropBg.classList.add("backdrop-blur-0");
+}, 3500);
 
-// setTimeout(() => {
-//   backdropBg.classList.remove("hidden");
-// }, 3200);
-// setTimeout(() => {
-//   backdropBg.classList.remove("backdrop-blur-xl");
-//   backdropBg.classList.add("backdrop-blur-0");
-// }, 3500);
-
-// const startAnimationBg = document.querySelector(".start-animation-bg");
-// const lightBg = document.querySelector(".light-bg");
-// setTimeout(() => {
-//   startAnimationBg.classList.add("hidden");
-//   lightBg.classList.add("opacity-0");
-// }, 5500);
+const startAnimationBg = document.querySelector(".start-animation-bg");
+const lightBg = document.querySelector(".light-bg");
+setTimeout(() => {
+  startAnimationBg.classList.add("hidden");
+  lightBg.classList.add("opacity-0");
+}, 5500);

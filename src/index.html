@@ -13,7 +13,7 @@
         --swiper-pagination-bullet-inactive-color: #d9d9d9;
         --swiper-pagination-bullet-inactive-opacity: 0.9;
         --swiper-pagination-color: #6f32b9;
-		--swiper-navigation-size: 1.2rem;
+        --swiper-navigation-size: 1.2rem;
       }
       #btn-back-to-top {
         position: fixed;
@@ -39,9 +39,9 @@
     class="relative z-40 overflow-x-hidden bg-neutral-900 font-poppins text-white transition-all"
   >
     <!-- LOAD ANIMATION START -->
-    <!-- <div class="start-animation-bg fixed z-[100] h-full w-full bg-neutral-900"> -->
-    <!-- loading-state -->
-    <!-- <div
+    <div class="start-animation-bg fixed z-[100] h-full w-full bg-neutral-900">
+      <!-- loading-state -->
+      <div
         class="loading-container flex h-full w-full items-center justify-center opacity-100"
       >
         <div class="flex w-8/12 flex-col lg:max-w-3xl">
@@ -52,9 +52,9 @@
             Loading <span class="loading-value">0</span>%
           </p>
         </div>
-      </div> -->
-    <!-- proudly-present-state -->
-    <!-- <div
+      </div>
+      <!-- proudly-present-state -->
+      <div
         class="proudly-present-container flex h-full w-full items-center opacity-0"
       >
         <div class="w-full text-center">
@@ -69,9 +69,9 @@
             Proudly Presents
           </p>
         </div>
-      </div> -->
-    <!-- bytesfest-title-state -->
-    <!-- <div
+      </div>
+      <!-- bytesfest-title-state -->
+      <div
         class="bytesfest-start-container flex h-full w-full items-center justify-center opacity-0 transition-all duration-300"
       >
         <div
@@ -92,14 +92,14 @@
             >
           </h1>
         </div>
-      </div> -->
-    <!-- <div
+      </div>
+      <div
         class="backdrop-bg fixed top-0 left-0 z-50 hidden h-full w-full backdrop-blur-xl transition-all duration-1000"
-      ></div> -->
-    <!-- </div> -->
-    <!-- <div
+      ></div>
+    </div>
+    <div
       class="light-bg fixed z-[75] h-full w-full bg-white transition-all duration-500"
-    ></div> -->
+    ></div>
     <!-- LOAD ANIMATION END -->
 
     <!-- HERO SECTION START -->
@@ -734,11 +734,15 @@
             </div>
           </div>
         </div>
-		<div class="flex justify-evenly md:justify-center md:gap-24">
-			<div class="swiper-button-prev relative -translate-y-1/4 p-5 uppercase rounded-full bg-primary-400 text-white hover:bg-primary-500 hover:shadow-lg"></div>
-			<div class="swiper-pagination relative w-auto"></div>
-			<div class="swiper-button-next relative -translate-y-1/4 p-5 uppercase rounded-full bg-primary-400 text-white hover:bg-primary-500 hover:shadow-lg"></div>
-		</div>
+        <div class="flex justify-evenly md:justify-center md:gap-24">
+          <div
+            class="swiper-button-prev relative -translate-y-1/4 rounded-full bg-primary-400 p-5 uppercase text-white hover:bg-primary-500 hover:shadow-lg"
+          ></div>
+          <div class="swiper-pagination relative w-auto"></div>
+          <div
+            class="swiper-button-next relative -translate-y-1/4 rounded-full bg-primary-400 p-5 uppercase text-white hover:bg-primary-500 hover:shadow-lg"
+          ></div>
+        </div>
       </div>
     </div>
 

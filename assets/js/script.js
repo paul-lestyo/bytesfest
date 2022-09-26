@@ -1,8 +1,8 @@
 // ketika melakukan scrolling, beri background pada navigation
 const navbar = document.querySelector(".navigation");
 const mybutton = document.getElementById("btn-back-to-top");
-const modalParent = document.getElementById("modal-parent");
-const modal = document.getElementById("modal-gas");
+const modalSubmission = document.getElementById("modal-submission");
+const modalDaftar = document.getElementById("modal-daftar");
 
 const countDownDay = document.getElementById("countDownDay");
 const countDownHour = document.getElementById("countDownHour");
@@ -11,26 +11,31 @@ const countDownSecond = document.getElementById("countDownSecond");
 
 const linkLomba = {
   podcast: {
-    registrasi: "https://dicoba1",
-    konfirmasi: "https://konfirmasi1",
+    registrasi: "https://forms.gle/nxJc3fC9ChwnSYVb6",
+    konfirmasi: "#",
   },
   web: {
-    registrasi: "https://dicoba2",
-    konfirmasi: "https://konfirmasi2",
+    registrasi: "https://forms.gle/6HZK7UKkTgTcWwRp6",
+    konfirmasi: "#",
   },
   fotografi: {
-    registrasi: "https://dicoba3",
-    konfirmasi: "https://konfirmasi3",
+    registrasi: "https://forms.gle/EJEyD3wNmoWBoNYi9",
+    konfirmasi: "#",
   },
   essai: {
-    registrasi: "https://dicoba4",
-    konfirmasi: "https://konfirmasi4",
+    registrasi: "https://forms.gle/yZdr3mCWxVSEAA4K8",
+    konfirmasi: "#",
   },
   poster: {
-    registrasi: "https://dicoba5",
-    konfirmasi: "https://konfirmasi5",
+    registrasi: "https://forms.gle/BhoCbu73PPRbsN7j9",
+    konfirmasi: "#",
   },
 };
+
+const linkSubmission = {
+	batch1: "https://pengumpulan.link1",
+	batch2: "https://pengumpulan.link2"
+}
 
 window.onscroll = function () {
   scrollFunction();
@@ -101,6 +106,7 @@ hamburgerMenu.addEventListener("click", function () {
   navigationMenu.classList.toggle("hidden");
   navigationMenu.classList.toggle("flex");
   setTimeout(() => {
+    navigationMenu.classList.toggle("opacity-0");
     navigationMenu.classList.toggle("opacity-100");
     // setTimeout(() => {
     //   navigationMenuBg.classList.toggle("opacity-100");
@@ -134,12 +140,29 @@ const x = setInterval(function () {
   }
 }, 1000);
 
-document.getElementById("backdrop").addEventListener("click", () => {
-  modal.classList.toggle("opacity-100");
-  setTimeout(() => {
-    modal.classList.toggle("hidden");
-  }, 300);
-});
+const closeModal = () => {
+	console.log('tes modal');
+	modalDaftar.classList.toggle("opacity-100");
+	modalDaftar.classList.toggle("opacity-0");
+	setTimeout(() => {
+		modalDaftar.classList.toggle("hidden");
+	}, 300);
+}
+
+document.getElementById("backdrop").addEventListener("click", closeModal);
+document.getElementById("close-button").addEventListener("click", closeModal);
+
+const closeModalSubmission = () => {
+	console.log('tes modal sub');
+	modalSubmission.classList.toggle("opacity-100");
+	modalSubmission.classList.toggle("opacity-0");
+	setTimeout(() => {
+		modalSubmission.classList.toggle("hidden");
+	}, 300);
+}
+
+document.getElementById("backdrop-submission").addEventListener("click", closeModalSubmission);
+document.getElementById("close-button-submission").addEventListener("click", closeModalSubmission);
 
 function daftarLomba(lomba) {
   event.preventDefault();
@@ -151,8 +174,24 @@ function daftarLomba(lomba) {
   document
     .getElementById("btnKonfirmasi")
     .setAttribute("href", linkLomba[lomba]["konfirmasi"]);
-  modal.classList.toggle("hidden");
+  modalDaftar.classList.toggle("hidden");
   setTimeout(() => {
-    modal.classList.toggle("opacity-100");
+    modalDaftar.classList.toggle("opacity-0");
+    modalDaftar.classList.toggle("opacity-100");
   }, 100);
 }
+
+function submissionLomba() {
+	event.preventDefault();
+	document
+	  .getElementById("btnSubmissionBatch1")
+	  .setAttribute("href", linkSubmission.batch1);
+	document
+	  .getElementById("btnSubmissionBatch2")
+	  .setAttribute("href", linkSubmission.batch2);
+	modalSubmission.classList.toggle("hidden");
+	setTimeout(() => {
+	  modalSubmission.classList.toggle("opacity-0");
+	  modalSubmission.classList.toggle("opacity-100");
+	}, 100);
+  }

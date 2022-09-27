@@ -12,23 +12,23 @@ const countDownSecond = document.getElementById("countDownSecond");
 const linkLomba = {
   podcast: {
     registrasi: "https://forms.gle/nxJc3fC9ChwnSYVb6",
-    konfirmasi: "#",
+    konfirmasi: "https://docs.google.com/forms/d/e/1FAIpQLSc078TmtZLzClEvBM5gz_52CS4u4TY2YPUd-q3hTw2tSCuG3A/viewform?usp=pp_url",
   },
   web: {
     registrasi: "https://forms.gle/6HZK7UKkTgTcWwRp6",
-    konfirmasi: "#",
+    konfirmasi: "https://docs.google.com/forms/d/e/1FAIpQLSfFrz_lxOs2a-MRwODXIuE82DPXXoBMBv_PoT0uMUlgadoxSg/viewform?usp=pp_url",
   },
   fotografi: {
     registrasi: "https://forms.gle/EJEyD3wNmoWBoNYi9",
-    konfirmasi: "#",
+    konfirmasi: "https://docs.google.com/forms/d/e/1FAIpQLSfod1uBOpjVxdO28g6JW_fU9Ed53x-UqdYm6I679NRttN2ZHQ/viewform?usp=pp_url",
   },
   essai: {
     registrasi: "https://forms.gle/yZdr3mCWxVSEAA4K8",
-    konfirmasi: "#",
+    konfirmasi: "https://docs.google.com/forms/d/e/1FAIpQLSf_HSg8_M7GrCiUoeSWGUH5QMQX6genEL34B9LWtCf5qrE8QA/viewform?usp=pp_url",
   },
   poster: {
     registrasi: "https://forms.gle/BhoCbu73PPRbsN7j9",
-    konfirmasi: "#",
+    konfirmasi: "https://docs.google.com/forms/d/e/1FAIpQLScJIlNG2myt_tMtgapEUsOdteCIhocd1mmFGtS8r6t8ed3U7A/viewform?usp=pp_url",
   },
 };
 

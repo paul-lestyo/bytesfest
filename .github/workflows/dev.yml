@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-    - master
+    - dev
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
@@ -17,4 +17,4 @@ jobs:
         server: ftp.bytesfest.web.id
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        server-dir: ./app/
+        server-dir: ./dev/

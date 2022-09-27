@@ -41,22 +41,20 @@
     class="relative z-40 overflow-x-hidden bg-neutral-900 font-poppins text-white transition-all"
   >
     <!-- LOAD ANIMATION START -->
-    <div class="start-animation-bg fixed z-[100] h-full w-full bg-neutral-900">
-      <!-- loading-state -->
-      <div
+    <!-- <div class="start-animation-bg fixed z-[100] h-full w-full bg-neutral-900"> -->
+    <!-- loading-state -->
+    <!-- <div
         class="loading-container flex h-full w-full items-center justify-center opacity-100"
       >
         <div class="flex w-8/12 flex-col lg:max-w-3xl">
-          <div
-            class="loading-line mb-4 h-[2px] w-full bg-primary-50 md:mb-6"
-          ></div>
+          <div class="loading-line mb-4 h-[2px] bg-primary-50 md:mb-6"></div>
           <p class="text-center tracking-wide">
             Loading <span class="loading-value">0</span>%
           </p>
         </div>
-      </div>
-      <!-- proudly-present-state -->
-      <div
+      </div> -->
+    <!-- proudly-present-state -->
+    <!-- <div
         class="proudly-present-container flex h-full w-full items-center opacity-0"
       >
         <div class="w-full text-center">
@@ -71,9 +69,9 @@
             Proudly Presents
           </p>
         </div>
-      </div>
-      <!-- bytesfest-title-state -->
-      <div
+      </div> -->
+    <!-- bytesfest-title-state -->
+    <!-- <div
         class="bytesfest-start-container flex h-full w-full items-center justify-center opacity-0 transition-all duration-300"
       >
         <div
@@ -94,14 +92,14 @@
             >
           </h1>
         </div>
-      </div>
-      <div
+      </div> -->
+    <!-- <div
         class="backdrop-bg fixed top-0 left-0 z-50 hidden h-full w-full backdrop-blur-lg transition-all duration-1000"
-      ></div>
-    </div>
-    <div
+      ></div> -->
+    <!-- </div> -->
+    <!-- <div
       class="light-bg fixed z-[75] h-full w-full bg-white transition-all duration-500"
-    ></div>
+    ></div> -->
     <!-- LOAD ANIMATION END -->
 
     <!-- HERO SECTION START -->
@@ -164,34 +162,49 @@
                     >Home</a
                   >
                 </li>
-                <li class="">
+                <li class="group relative">
                   <a
                     href="#about"
                     class="decoration-primary-100 decoration-2 underline-offset-4 hover:underline"
                     >About</a
+                  ><span
+                    class="absolute top-8 left-0 z-30 hidden h-auto w-36 rounded-sm bg-primary-25 px-3 py-2 text-xs text-neutral-900 group-hover:block"
+                    >Mau tau apa itu bytesfest?</span
                   >
                 </li>
-                <li class="">
+                <li class="group relative">
                   <a
                     href="#dangle"
                     class="decoration-primary-100 decoration-2 underline-offset-4 hover:underline"
                     >Dangle</a
+                  ><span
+                    class="absolute top-8 left-0 z-30 hidden h-auto w-44 rounded-sm bg-primary-25 px-3 py-2 text-xs text-neutral-900 group-hover:block"
+                    >Mascot kami tidak dibuat sembarangan lohh. Ada filosofi dan
+                    maknanya.</span
                   >
                 </li>
-                <li class="">
+                <li class="group relative">
                   <a
                     href="#competition"
                     class="decoration-primary-100 decoration-2 underline-offset-4 hover:underline"
                     >Competition</a
                   >
+                  <span
+                    class="absolute top-8 left-0 z-30 hidden h-auto w-36 rounded-sm bg-primary-25 px-3 py-2 text-xs text-neutral-900 group-hover:block"
+                    >Apa aja sih lombanya?</span
+                  >
                 </li>
-                <li class="">
+                <li class="group relative">
                   <button
                     onclick="submissionLomba()"
                     class="decoration-primary-100 decoration-2 underline-offset-4 hover:underline"
                   >
                     Submission
                   </button>
+                  <span
+                    class="absolute top-8 left-0 z-30 hidden h-auto w-36 rounded-sm bg-primary-25 px-3 py-2 text-xs text-neutral-900 group-hover:block"
+                    >Pengumpulan karya lomba disini!</span
+                  >
                 </li>
               </ul>
             </div>
@@ -238,15 +251,43 @@
             <div class="flex w-full justify-center gap-3 md:gap-8">
               <a
                 href="#competition"
-                class="rounded-sm bg-primary-0 px-10 py-3 font-semibold tracking-wide text-primary-900 md:px-16 md:py-4"
+                class="group relative overflow-hidden rounded-sm bg-primary-0 px-10 py-3 font-semibold tracking-wide text-primary-900 transition-all duration-300 md:px-16 md:py-4"
               >
-                Daftar
+                <p
+                  class="transition-transform duration-300 group-hover:-translate-x-2 md:group-hover:group-hover:-translate-x-5"
+                >
+                  Daftar
+                </p>
+                <div
+                  class="absolute top-0 right-0 flex h-full w-8 translate-x-full items-center justify-center bg-primary-75 transition-all duration-300 group-hover:translate-x-0 md:w-12"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="bi bi-file-text w-5 md:w-6"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"
+                    />
+                    <path
+                      d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"
+                    />
+                  </svg>
+                </div>
               </a>
               <a
                 href="#about"
-                class="flex items-center text-sm font-medium text-white underline decoration-primary-100 decoration-2 underline-offset-4 md:text-base"
+                class="group flex items-center text-sm font-medium text-white md:text-base"
               >
-                Bytesfest itu apa?
+                <p
+                  class="decoration-primary-100 decoration-2 underline-offset-4 group-hover:underline"
+                >
+                  Bytesfest itu apa?<span
+                    class="opacity-0 transition-opacity duration-200 group-hover:opacity-100"
+                    >??</span
+                  >
+                </p>
               </a>
             </div>
           </div>
@@ -256,9 +297,9 @@
             class="absolute -bottom-4 left-1/2 mx-auto h-20 w-full -translate-x-1/2 rounded-sm border-[0.5px] border-neutral-200 bg-neutral-900 px-5 opacity-75 sm:h-24 sm:w-[480px] md:w-[520px] lg:-bottom-5 lg:h-28 lg:w-[400px] lg:px-0"
           >
             <p
-              class="absolute w-full -translate-y-8 text-center text-xs tracking-wide text-white"
+              class="absolute left-0 w-full -translate-y-8 text-center text-xs tracking-wide text-white"
             >
-			  Puncak acara dimulai dalam :
+              Puncak acara dimulai dalam :
             </p>
             <div
               class="relative -mt-4 grid h-full w-full grid-cols-7 content-center px-2 text-2xl"
@@ -463,9 +504,7 @@
       <div class="swiper mt-8 mb-32">
         <div class="swiper-wrapper pb-12">
           <!-- slide-1 -->
-          <div
-            class="swiper-slide swiper-slide-custom"
-          >
+          <div class="swiper-slide swiper-slide-custom">
             <div class="h-full w-full bg-neutral-800 lg:relative lg:h-[500px]">
               <!-- img -->
               <div
@@ -503,24 +542,33 @@
               >
                 <button
                   onclick="daftarLomba('podcast')"
-                  class="rounded-sm bg-neutral-0 px-8 py-2 font-semibold text-primary-900 md:px-10 md:py-3"
+                  class="group relative box-border overflow-hidden rounded-sm bg-neutral-0 px-8 py-2 font-semibold text-primary-900 transition-all duration-300 md:px-10 md:py-3"
                 >
-                  Daftar
+                  <p
+                    class="relative z-30 transition-all duration-300 group-hover:text-white"
+                  >
+                    Daftar
+                  </p>
+                  <span
+                    class="absolute top-0 left-0 block h-full w-0 bg-primary-200 shadow-[inset_0_0_0_1px_#fff] shadow-primary-0 transition-all duration-300 group-hover:w-full"
+                  ></span>
                 </button>
                 <a
                   href="https://link-guidebook"
                   target="_blank"
-                  class="decoration-primary-200 decoration-2 underline-offset-2 hover:underline"
-                  >Guidebook ></a
+                  class="group decoration-primary-200 decoration-2 underline-offset-2 hover:underline"
+                  >Guidebook
+                  <span
+                    class="inline-block transition-transform duration-200 group-hover:translate-x-2"
+                    >></span
+                  ></a
                 >
               </div>
             </div>
           </div>
 
           <!-- slide-2 -->
-          <div
-            class="swiper-slide swiper-slide-custom"
-          >
+          <div class="swiper-slide swiper-slide-custom">
             <div class="h-full w-full bg-neutral-800 lg:relative lg:h-[500px]">
               <!-- img -->
               <div
@@ -558,24 +606,33 @@
               >
                 <button
                   onclick="daftarLomba('web')"
-                  class="rounded-sm bg-neutral-0 px-8 py-2 font-semibold text-primary-900 md:px-10 md:py-3"
+                  class="group relative box-border overflow-hidden rounded-sm bg-neutral-0 px-8 py-2 font-semibold text-primary-900 transition-all duration-300 md:px-10 md:py-3"
                 >
-                  Daftar
+                  <p
+                    class="relative z-30 transition-all duration-300 group-hover:text-white"
+                  >
+                    Daftar
+                  </p>
+                  <span
+                    class="absolute top-0 left-0 block h-full w-0 bg-primary-200 shadow-[inset_0_0_0_1px_#fff] shadow-primary-0 transition-all duration-300 group-hover:w-full"
+                  ></span>
                 </button>
                 <a
                   href="https://link-guidebook"
                   target="_blank"
-                  class="decoration-primary-200 decoration-2 underline-offset-2 hover:underline"
-                  >Guidebook ></a
+                  class="group decoration-primary-200 decoration-2 underline-offset-2 hover:underline"
+                  >Guidebook
+                  <span
+                    class="inline-block transition-transform duration-200 group-hover:translate-x-2"
+                    >></span
+                  ></a
                 >
               </div>
             </div>
           </div>
 
           <!-- slide-3 -->
-          <div
-            class="swiper-slide swiper-slide-custom"
-          >
+          <div class="swiper-slide swiper-slide-custom">
             <div class="h-full w-full bg-neutral-800 lg:relative lg:h-[500px]">
               <!-- img -->
               <div
@@ -614,23 +671,32 @@
               >
                 <button
                   onclick="daftarLomba('fotografi')"
-                  class="rounded-sm bg-neutral-0 px-8 py-2 font-semibold text-primary-900 md:px-10 md:py-3"
+                  class="group relative box-border overflow-hidden rounded-sm bg-neutral-0 px-8 py-2 font-semibold text-primary-900 transition-all duration-300 md:px-10 md:py-3"
                 >
-                  Daftar
+                  <p
+                    class="relative z-30 transition-all duration-300 group-hover:text-white"
+                  >
+                    Daftar
+                  </p>
+                  <span
+                    class="absolute top-0 left-0 block h-full w-0 bg-primary-200 shadow-[inset_0_0_0_1px_#fff] shadow-primary-0 transition-all duration-300 group-hover:w-full"
+                  ></span>
                 </button>
                 <a
                   href="https://link-guidebook"
                   target="_blank"
-                  class="decoration-primary-200 decoration-2 underline-offset-2 hover:underline"
-                  >Guidebook ></a
+                  class="group decoration-primary-200 decoration-2 underline-offset-2 hover:underline"
+                  >Guidebook
+                  <span
+                    class="inline-block transition-transform duration-200 group-hover:translate-x-2"
+                    >></span
+                  ></a
                 >
               </div>
             </div>
           </div>
           <!-- slide-4 -->
-          <div
-            class="swiper-slide swiper-slide-custom"
-          >
+          <div class="swiper-slide swiper-slide-custom">
             <div class="h-full w-full bg-neutral-800 lg:relative lg:h-[500px]">
               <!-- img -->
               <div
@@ -668,24 +734,33 @@
               >
                 <button
                   onclick="daftarLomba('essai')"
-                  class="rounded-sm bg-neutral-0 px-8 py-2 font-semibold text-primary-900 md:px-10 md:py-3"
+                  class="group relative box-border overflow-hidden rounded-sm bg-neutral-0 px-8 py-2 font-semibold text-primary-900 transition-all duration-300 md:px-10 md:py-3"
                 >
-                  Daftar
+                  <p
+                    class="relative z-30 transition-all duration-300 group-hover:text-white"
+                  >
+                    Daftar
+                  </p>
+                  <span
+                    class="absolute top-0 left-0 block h-full w-0 bg-primary-200 shadow-[inset_0_0_0_1px_#fff] shadow-primary-0 transition-all duration-300 group-hover:w-full"
+                  ></span>
                 </button>
                 <a
                   href="https://link-guidebook"
                   target="_blank"
-                  class="decoration-primary-200 decoration-2 underline-offset-2 hover:underline"
-                  >Guidebook ></a
+                  class="group decoration-primary-200 decoration-2 underline-offset-2 hover:underline"
+                  >Guidebook
+                  <span
+                    class="inline-block transition-transform duration-200 group-hover:translate-x-2"
+                    >></span
+                  ></a
                 >
               </div>
             </div>
           </div>
 
           <!-- slide-5 -->
-          <div
-            class="swiper-slide swiper-slide-custom"
-          >
+          <div class="swiper-slide swiper-slide-custom">
             <div class="h-full w-full bg-neutral-800 lg:relative lg:h-[500px]">
               <!-- img -->
               <div
@@ -713,7 +788,10 @@
                   berwarna-warni, yang memudahkan untuk menyuarakan masalah yang
                   terkait dan sesuai untuk ditampilkan di tempat umum. Kompetisi
                   Poster bisa diikuti oleh SMA sederajat dan mahasiswa aktif
-                  dari seluruh perguruan tinggi. Kompetisi Poster bisa diikuti oleh SMA sederajat dan mahasiswa aktif dari seluruh perguruan tinggi dengan mengusung tema "Great Creation Start With Yourself".
+                  dari seluruh perguruan tinggi. Kompetisi Poster bisa diikuti
+                  oleh SMA sederajat dan mahasiswa aktif dari seluruh perguruan
+                  tinggi dengan mengusung tema "Great Creation Start With
+                  Yourself".
                 </p>
               </div>
               <!-- action-button -->
@@ -721,16 +799,27 @@
                 class="absolute bottom-0 z-10 flex h-20 w-full items-center justify-center gap-10 bg-neutral-700 text-sm"
               >
                 <button
-                  onclick="daftarLomba('poster')"
-                  class="rounded-sm bg-neutral-0 px-8 py-2 font-semibold text-primary-900 md:px-10 md:py-3"
+                  onclick="daftarLomba('podcast')"
+                  class="group relative box-border overflow-hidden rounded-sm bg-neutral-0 px-8 py-2 font-semibold text-primary-900 transition-all duration-300 md:px-10 md:py-3"
                 >
-                  Daftar
+                  <p
+                    class="relative z-30 transition-all duration-300 group-hover:text-white"
+                  >
+                    Daftar
+                  </p>
+                  <span
+                    class="absolute top-0 left-0 block h-full w-0 bg-primary-200 shadow-[inset_0_0_0_1px_#fff] shadow-primary-0 transition-all duration-300 group-hover:w-full"
+                  ></span>
                 </button>
                 <a
                   href="https://link-guidebook"
                   target="_blank"
-                  class="decoration-primary-200 decoration-2 underline-offset-2 hover:underline"
-                  >Guidebook ></a
+                  class="group decoration-primary-200 decoration-2 underline-offset-2 hover:underline"
+                  >Guidebook
+                  <span
+                    class="inline-block transition-transform duration-200 group-hover:translate-x-2"
+                    >></span
+                  ></a
                 >
               </div>
             </div>
@@ -780,14 +869,14 @@
           <!-- right -->
           <div class="order-1 flex w-5/12 justify-end">
             <h3
-              class="border-l-4 border-primary-300 bg-primary-50 px-2 py-2 text-xs font-normal text-neutral-900 shadow-xl md:px-3 md:py-3 md:text-sm"
+              class="border-l-4 border-primary-300 bg-primary-50 px-2 py-2 text-xs font-normal text-neutral-900 md:px-3 md:py-3 md:text-sm"
             >
               <b>28</b> September - <b>8</b> Oktober 2022
             </h3>
           </div>
           <!-- left -->
           <div
-            class="z-20 order-1 flex h-5 w-5 items-center rounded-full bg-primary-50 shadow-xl"
+            class="z-20 order-1 flex h-5 w-5 items-center rounded-full bg-primary-50"
           ></div>
           <div class="order-1 flex w-5/12 justify-start">
             <h3 class="text-sm font-normal text-white md:text-base">
@@ -803,14 +892,14 @@
           <!-- right -->
           <div class="order-1 flex w-5/12 justify-end">
             <h3
-              class="border-l-4 border-primary-300 bg-primary-50 px-2 py-2 text-xs font-normal text-neutral-900 shadow-xl md:px-3 md:py-3 md:text-sm"
+              class="border-l-4 border-primary-300 bg-primary-50 px-2 py-2 text-xs font-normal text-neutral-900 md:px-3 md:py-3 md:text-sm"
             >
               <b>9</b> Oktober - <b>13</b> Oktober 2022
             </h3>
           </div>
           <!-- left -->
           <div
-            class="z-20 order-1 flex h-5 w-5 items-center rounded-full bg-primary-75 shadow-xl"
+            class="z-20 order-1 flex h-5 w-5 items-center rounded-full bg-primary-75"
           ></div>
           <div class="order-1 flex w-5/12 justify-start">
             <h3 class="text-sm font-normal text-white md:text-base">
@@ -826,14 +915,14 @@
           <!-- right -->
           <div class="order-1 flex w-5/12 justify-end">
             <h3
-              class="border-l-4 border-primary-300 bg-primary-50 px-2 py-2 text-xs font-normal text-neutral-900 shadow-xl md:px-3 md:py-3 md:text-sm"
+              class="border-l-4 border-primary-300 bg-primary-50 px-2 py-2 text-xs font-normal text-neutral-900 md:px-3 md:py-3 md:text-sm"
             >
               <b>9</b> Oktober - <b>22</b> Oktober 2022
             </h3>
           </div>
           <!-- left -->
           <div
-            class="z-20 order-1 flex h-5 w-5 items-center rounded-full bg-primary-100 shadow-xl"
+            class="z-20 order-1 flex h-5 w-5 items-center rounded-full bg-primary-100"
           ></div>
           <div class="order-1 flex w-5/12 justify-start">
             <h3 class="text-sm font-normal text-white md:text-base">
@@ -853,11 +942,11 @@
           </div>
           <!-- left -->
           <div
-            class="z-20 order-1 flex h-5 w-5 items-center rounded-full bg-primary-200 shadow-xl"
+            class="z-20 order-1 flex h-5 w-5 items-center rounded-full bg-primary-200"
           ></div>
           <div class="order-1 flex w-5/12 justify-start">
             <h3
-              class="border-l-4 border-primary-400 bg-primary-75 px-2 py-2 text-xs font-normal text-neutral-900 shadow-xl md:px-3 md:py-3 md:text-sm"
+              class="border-l-4 border-primary-400 bg-primary-75 px-2 py-2 text-xs font-normal text-neutral-900 md:px-3 md:py-3 md:text-sm"
             >
               <b>23</b> Oktober - <b>27</b> Oktober 2022
             </h3>
@@ -875,11 +964,11 @@
           </div>
           <!-- left -->
           <div
-            class="z-20 order-1 flex h-5 w-5 items-center rounded-full bg-primary-300 shadow-xl"
+            class="z-20 order-1 flex h-5 w-5 items-center rounded-full bg-primary-300"
           ></div>
           <div class="order-1 flex w-5/12 justify-start">
             <h3
-              class="border-l-4 border-primary-400 bg-primary-75 px-2 py-2 text-xs font-normal text-neutral-900 shadow-xl md:px-3 md:py-3 md:text-sm"
+              class="border-l-4 border-primary-400 bg-primary-75 px-2 py-2 text-xs font-normal text-neutral-900 md:px-3 md:py-3 md:text-sm"
             >
               <b>28</b> Oktober - <b>11</b> November 2022
             </h3>
@@ -897,11 +986,11 @@
           </div>
           <!-- left -->
           <div
-            class="z-20 order-1 flex h-5 w-5 items-center rounded-full bg-primary-400 shadow-xl"
+            class="z-20 order-1 flex h-5 w-5 items-center rounded-full bg-primary-400"
           ></div>
           <div class="order-1 flex w-5/12 justify-start">
             <h3
-              class="border-l-4 border-primary-400 bg-primary-75 px-2 py-2 text-xs font-normal text-neutral-900 shadow-xl md:py-3 md:px-3 md:text-sm"
+              class="border-l-4 border-primary-400 bg-primary-75 px-2 py-2 text-xs font-normal text-neutral-900 md:py-3 md:px-3 md:text-sm"
             >
               <b>12</b> November 2022
             </h3>

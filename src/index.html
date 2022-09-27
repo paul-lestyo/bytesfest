@@ -34,6 +34,7 @@
       Bytesfest 2022 - Bunch of Youth Technottraction and Sport Festival
     </title>
     <link rel="icon" type="image/x-icon" href="/assets/img/logo-mini.png" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- script load for animejs -->
     <script src="../dist/anime.min.js"></script>
   </head>
@@ -41,9 +42,9 @@
     class="relative z-40 overflow-x-hidden bg-neutral-900 font-poppins text-white transition-all"
   >
     <!-- LOAD ANIMATION START -->
-    <!-- <div class="start-animation-bg fixed z-[100] h-full w-full bg-neutral-900"> -->
-    <!-- loading-state -->
-    <!-- <div
+    <div class="start-animation-bg fixed z-[100] h-full w-full bg-neutral-900">
+      <!-- loading-state -->
+      <div
         class="loading-container flex h-full w-full items-center justify-center opacity-100"
       >
         <div class="flex w-8/12 flex-col lg:max-w-3xl">
@@ -52,9 +53,9 @@
             Loading <span class="loading-value">0</span>%
           </p>
         </div>
-      </div> -->
-    <!-- proudly-present-state -->
-    <!-- <div
+      </div>
+      <!-- proudly-present-state -->
+      <div
         class="proudly-present-container flex h-full w-full items-center opacity-0"
       >
         <div class="w-full text-center">
@@ -69,9 +70,9 @@
             Proudly Presents
           </p>
         </div>
-      </div> -->
-    <!-- bytesfest-title-state -->
-    <!-- <div
+      </div>
+      <!-- bytesfest-title-state -->
+      <div
         class="bytesfest-start-container flex h-full w-full items-center justify-center opacity-0 transition-all duration-300"
       >
         <div
@@ -92,14 +93,14 @@
             >
           </h1>
         </div>
-      </div> -->
-    <!-- <div
+      </div>
+      <div
         class="backdrop-bg fixed top-0 left-0 z-50 hidden h-full w-full backdrop-blur-lg transition-all duration-1000"
-      ></div> -->
-    <!-- </div> -->
-    <!-- <div
+      ></div>
+    </div>
+    <div
       class="light-bg fixed z-[75] h-full w-full bg-white transition-all duration-500"
-    ></div> -->
+    ></div>
     <!-- LOAD ANIMATION END -->
 
     <!-- HERO SECTION START -->
@@ -368,6 +369,7 @@
             <!-- text-container -->
             <div class="sm:px-10 md:px-16">
               <h3
+                data-aos="fade-right"
                 class="mb-1 text-center text-xl font-semibold tracking-wide text-primary-0 sm:text-left sm:text-2xl md:text-3xl lg:text-4xl"
               >
                 Bytes<span
@@ -376,14 +378,25 @@
                 >
               </h3>
               <h5
+                data-aos="fade-right"
                 class="mb-3 text-center text-xs tracking-normal text-neutral-100 sm:text-left sm:text-sm md:mb-4 md:text-base"
               >
                 Bunch of Youth Technottraction and Sport Festival
               </h5>
-              <div class="mb-5 flex w-full justify-center sm:justify-start">
+              <div
+                data-aos="fade-right"
+                data-aos-duration="300"
+                data-aos-delay="0"
+                class="mb-5 flex w-full justify-center sm:justify-start"
+              >
                 <div class="h-[3px] w-16 bg-primary-100"></div>
               </div>
-              <div class="">
+              <div
+                data-aos="fade-right"
+                data-aos-easing="ease"
+                data-aos-delay="50"
+                class=""
+              >
                 <p
                   class="mb-5 text-sm leading-relaxed text-neutral-50 md:leading-loose"
                 >
@@ -431,6 +444,7 @@
             <!-- text-container -->
             <div class="sm:px-10 md:px-16">
               <h3
+                data-aos="fade-right"
                 class="text-shadow-hero-lg mb-1 text-center text-xl font-semibold tracking-wide sm:text-left sm:text-2xl md:text-3xl lg:text-4xl"
               >
                 <span
@@ -439,15 +453,20 @@
                 >
               </h3>
               <h5
+                data-aos="fade-right"
                 class="text-shadow-hero-md mb-3 text-center text-xs tracking-normal text-neutral-100 sm:text-left sm:text-sm md:mb-4 md:text-base"
               >
                 Filosofi Maskot
               </h5>
               <!-- underline-decoration -->
-              <div class="mb-5 flex w-full justify-center sm:justify-start">
+              <div
+                data-aos="fade-right"
+                data-aos-duration="300"
+                class="mb-5 flex w-full justify-center sm:justify-start"
+              >
                 <div class="h-[3px] w-16 bg-primary-100"></div>
               </div>
-              <div class="">
+              <div data-aos="fade-right" data-aos-delay="50" class="">
                 <p
                   class="mb-5 text-sm leading-relaxed text-neutral-50 md:leading-loose"
                 >
@@ -483,7 +502,7 @@
     <div class="bg-neutral-900" id="competition">
       <div class="pt-36 text-center">
         <h1
-          href=""
+          data-aos="fade"
           class="mb-3 text-center text-xl font-semibold tracking-wide text-primary-0 sm:text-2xl md:mb-4 md:text-3xl lg:text-4xl"
         >
           Bytes<span class="text-primary-75">fest</span> Competition
@@ -493,7 +512,7 @@
           >
         </h1>
         <!-- underline-decoration -->
-        <div class="mb-6 flex w-full justify-center md:mb-8">
+        <div data-aos="fade" class="mb-6 flex w-full justify-center md:mb-8">
           <div class="h-[3px] w-28 bg-primary-100"></div>
         </div>
         <p class="text-center text-xs text-neutral-100">
@@ -504,7 +523,7 @@
       <div class="swiper mt-8 mb-32">
         <div class="swiper-wrapper pb-12">
           <!-- slide-1 -->
-          <div class="swiper-slide swiper-slide-custom">
+          <div data-aos="fade" class="swiper-slide swiper-slide-custom">
             <div class="h-full w-full bg-neutral-800 lg:relative lg:h-[500px]">
               <!-- img -->
               <div
@@ -516,6 +535,7 @@
                   class="h-full w-full object-cover"
                 />
                 <p
+                  data-aos="fade-right"
                   class="absolute top-1/2 text-2xl font-medium tracking-wide md:text-3xl lg:top-16 lg:text-4xl"
                 >
                   Podcast
@@ -526,6 +546,7 @@
                 class="z-10 mt-4 mb-8 px-5 pb-20 md:mb-10 md:mt-5 md:px-10 lg:absolute lg:top-36 lg:flex lg:w-full lg:justify-center"
               >
                 <p
+                  data-aos="fade-right"
                   class="text-xs leading-relaxed text-neutral-50 md:leading-loose lg:w-[600px] lg:text-sm lg:leading-loose"
                 >
                   Dengan Tema “How to improve yourself, with your creativity and
@@ -568,7 +589,7 @@
           </div>
 
           <!-- slide-2 -->
-          <div class="swiper-slide swiper-slide-custom">
+          <div data-aos="fade" class="swiper-slide swiper-slide-custom">
             <div class="h-full w-full bg-neutral-800 lg:relative lg:h-[500px]">
               <!-- img -->
               <div
@@ -580,6 +601,7 @@
                   class="h-full w-full object-cover"
                 />
                 <p
+                  data-aos="fade-right"
                   class="absolute top-1/2 text-2xl font-medium tracking-wide md:text-3xl lg:top-16 lg:text-4xl"
                 >
                   Desain Web
@@ -590,6 +612,7 @@
                 class="z-10 mt-4 mb-8 px-5 pb-20 md:mb-10 md:mt-5 md:px-10 lg:absolute lg:top-36 lg:flex lg:w-full lg:justify-center"
               >
                 <p
+                  data-aos="fade-right"
                   class="text-xs leading-relaxed text-neutral-50 md:leading-loose lg:w-[600px] lg:text-sm lg:leading-loose"
                 >
                   Merupakan Kompetisi perancangan tampilan sebuah web statis
@@ -632,7 +655,7 @@
           </div>
 
           <!-- slide-3 -->
-          <div class="swiper-slide swiper-slide-custom">
+          <div data-aos="fade" class="swiper-slide swiper-slide-custom">
             <div class="h-full w-full bg-neutral-800 lg:relative lg:h-[500px]">
               <!-- img -->
               <div
@@ -644,6 +667,7 @@
                   class="h-full w-full object-cover"
                 />
                 <p
+                  data-aos="fade-right"
                   class="absolute top-1/2 text-2xl font-medium tracking-wide md:text-3xl lg:top-16 lg:text-4xl"
                 >
                   Fotografi
@@ -654,6 +678,7 @@
                 class="z-10 mt-4 mb-8 px-5 pb-20 md:mb-10 md:mt-5 md:px-10 lg:absolute lg:top-36 lg:flex lg:w-full lg:justify-center"
               >
                 <p
+                  data-aos="fade-right"
                   class="text-xs leading-relaxed text-neutral-50 md:leading-loose lg:w-[600px] lg:text-sm lg:leading-loose"
                 >
                   Merupakan kompetisi dalam menyajikan sebuah karya visual
@@ -696,7 +721,7 @@
             </div>
           </div>
           <!-- slide-4 -->
-          <div class="swiper-slide swiper-slide-custom">
+          <div data-aos="fade" class="swiper-slide swiper-slide-custom">
             <div class="h-full w-full bg-neutral-800 lg:relative lg:h-[500px]">
               <!-- img -->
               <div
@@ -708,6 +733,7 @@
                   class="h-full w-full object-cover"
                 />
                 <p
+                  data-aos="fade-right"
                   class="absolute top-1/2 text-2xl font-medium tracking-wide md:text-3xl lg:top-16 lg:text-4xl"
                 >
                   Essai
@@ -718,6 +744,7 @@
                 class="z-10 mt-4 mb-8 px-5 pb-20 md:mb-10 md:mt-5 md:px-10 lg:absolute lg:top-36 lg:flex lg:w-full lg:justify-center"
               >
                 <p
+                  data-aos="fade-right"
                   class="text-xs leading-relaxed text-neutral-50 md:leading-loose lg:w-[600px] lg:text-sm lg:leading-loose"
                 >
                   Merupakan kompetisi di bidang kepenulisan yang dapat diikuti
@@ -760,7 +787,7 @@
           </div>
 
           <!-- slide-5 -->
-          <div class="swiper-slide swiper-slide-custom">
+          <div data-aos="fade" class="swiper-slide swiper-slide-custom">
             <div class="h-full w-full bg-neutral-800 lg:relative lg:h-[500px]">
               <!-- img -->
               <div
@@ -772,6 +799,7 @@
                   class="h-full w-full object-cover"
                 />
                 <p
+                  data-aos="fade-right"
                   class="absolute top-1/2 text-2xl font-medium tracking-wide md:text-3xl lg:top-16 lg:text-4xl"
                 >
                   Poster
@@ -782,6 +810,7 @@
                 class="z-10 mt-4 mb-8 px-5 pb-20 md:mb-10 md:mt-5 md:px-10 lg:absolute lg:top-36 lg:flex lg:w-full lg:justify-center"
               >
                 <p
+                  data-aos="fade-right"
                   class="text-xs leading-relaxed text-neutral-50 md:leading-loose lg:w-[600px] lg:text-sm lg:leading-loose"
                 >
                   Merupakan kompetisi yang menyediakan karya visual yang
@@ -837,10 +866,11 @@
       </div>
     </div>
 
-    <!-- component -->
+    <!-- Timeline -->
     <div class="mx-auto h-full w-full bg-[#1b1b1b] py-32">
       <div class="text-center">
         <h1
+          data-aos="fade"
           href=""
           class="mb-3 text-center text-xl font-semibold tracking-wide text-primary-0 sm:text-2xl md:mb-4 md:text-3xl lg:text-4xl"
         >
@@ -851,11 +881,11 @@
           >
         </h1>
         <!-- underline-decoration -->
-        <div class="mb-6 flex w-full justify-center md:mb-16">
+        <div data-aos="fade" class="mb-6 flex w-full justify-center md:mb-16">
           <div class="h-[3px] w-28 bg-primary-100"></div>
         </div>
       </div>
-      <!-- timeline -->
+      <!-- timeline-content -->
       <div class="wrap relative h-full overflow-hidden px-5">
         <!-- line -->
         <div
@@ -867,7 +897,11 @@
           class="right-timeline mb-8 flex w-full items-center justify-between md:mb-16"
         >
           <!-- right -->
-          <div class="order-1 flex w-5/12 justify-end">
+          <div
+            class="order-1 flex w-5/12 justify-end"
+            data-aos="fade-left"
+            data-aos-delay="500"
+          >
             <h3
               class="border-l-4 border-primary-300 bg-primary-50 px-2 py-2 text-xs font-normal text-neutral-900 md:px-3 md:py-3 md:text-sm"
             >
@@ -876,9 +910,14 @@
           </div>
           <!-- left -->
           <div
+            data-aos="fade"
             class="z-20 order-1 flex h-5 w-5 items-center rounded-full bg-primary-50"
           ></div>
-          <div class="order-1 flex w-5/12 justify-start">
+          <div
+            data-aos="fade"
+            data-aos-delay="300"
+            class="order-1 flex w-5/12 justify-start"
+          >
             <h3 class="text-sm font-normal text-white md:text-base">
               Registrasi Lomba <span class="text-neutral-75">(Batch 1)</span>
             </h3>
@@ -890,7 +929,11 @@
           class="right-timeline mb-8 flex w-full items-center justify-between md:mb-16"
         >
           <!-- right -->
-          <div class="order-1 flex w-5/12 justify-end">
+          <div
+            data-aos="fade-left"
+            data-aos-delay="500"
+            class="order-1 flex w-5/12 justify-end"
+          >
             <h3
               class="border-l-4 border-primary-300 bg-primary-50 px-2 py-2 text-xs font-normal text-neutral-900 md:px-3 md:py-3 md:text-sm"
             >
@@ -899,9 +942,14 @@
           </div>
           <!-- left -->
           <div
+            data-aos="fade"
             class="z-20 order-1 flex h-5 w-5 items-center rounded-full bg-primary-75"
           ></div>
-          <div class="order-1 flex w-5/12 justify-start">
+          <div
+            data-aos="fade"
+            data-aos-delay="300"
+            class="order-1 flex w-5/12 justify-start"
+          >
             <h3 class="text-sm font-normal text-white md:text-base">
               Pengumpulan Karya <span class="text-neutral-75">(Batch 1)</span>
             </h3>
@@ -913,7 +961,11 @@
           class="right-timeline mb-8 flex w-full items-center justify-between md:mb-16"
         >
           <!-- right -->
-          <div class="order-1 flex w-5/12 justify-end">
+          <div
+            data-aos="fade-left"
+            data-aos-delay="500"
+            class="order-1 flex w-5/12 justify-end"
+          >
             <h3
               class="border-l-4 border-primary-300 bg-primary-50 px-2 py-2 text-xs font-normal text-neutral-900 md:px-3 md:py-3 md:text-sm"
             >
@@ -922,9 +974,14 @@
           </div>
           <!-- left -->
           <div
+            data-aos="fade"
             class="z-20 order-1 flex h-5 w-5 items-center rounded-full bg-primary-100"
           ></div>
-          <div class="order-1 flex w-5/12 justify-start">
+          <div
+            data-aos="fade"
+            data-aos-delay="300"
+            class="order-1 flex w-5/12 justify-start"
+          >
             <h3 class="text-sm font-normal text-white md:text-base">
               Registrasi Lomba <span class="text-neutral-75">(Batch 2)</span>
             </h3>
@@ -935,16 +992,25 @@
           class="right-timeline mb-8 flex w-full items-center justify-between md:mb-16"
         >
           <!-- right -->
-          <div class="order-1 flex w-5/12 justify-end">
+          <div
+            data-aos="fade"
+            data-aos-delay="300"
+            class="order-1 flex w-5/12 justify-end"
+          >
             <h3 class="text-sm font-normal text-white md:text-base">
               Pengumpulan Karya <span class="text-neutral-75">(Batch 2)</span>
             </h3>
           </div>
           <!-- left -->
           <div
+            data-aos="fade"
             class="z-20 order-1 flex h-5 w-5 items-center rounded-full bg-primary-200"
           ></div>
-          <div class="order-1 flex w-5/12 justify-start">
+          <div
+            data-aos="fade-right"
+            data-aos-delay="500"
+            class="order-1 flex w-5/12 justify-start"
+          >
             <h3
               class="border-l-4 border-primary-400 bg-primary-75 px-2 py-2 text-xs font-normal text-neutral-900 md:px-3 md:py-3 md:text-sm"
             >
@@ -957,16 +1023,25 @@
           class="right-timeline mb-8 flex w-full items-center justify-between md:mb-16"
         >
           <!-- right -->
-          <div class="order-1 flex w-5/12 justify-end">
+          <div
+            data-aos="fade"
+            data-aos-delay="300"
+            class="order-1 flex w-5/12 justify-end"
+          >
             <h3 class="text-sm font-normal text-white md:text-base">
               Open Registrasi Seminar
             </h3>
           </div>
           <!-- left -->
           <div
+            data-aos="fade"
             class="z-20 order-1 flex h-5 w-5 items-center rounded-full bg-primary-300"
           ></div>
-          <div class="order-1 flex w-5/12 justify-start">
+          <div
+            data-aos="fade-right"
+            data-aos-delay="500"
+            class="order-1 flex w-5/12 justify-start"
+          >
             <h3
               class="border-l-4 border-primary-400 bg-primary-75 px-2 py-2 text-xs font-normal text-neutral-900 md:px-3 md:py-3 md:text-sm"
             >
@@ -979,16 +1054,25 @@
           class="right-timeline md:mb162 mb-8 flex w-full items-center justify-between"
         >
           <!-- right -->
-          <div class="order-1 flex w-5/12 justify-end">
+          <div
+            data-aos="fade"
+            data-aos-delay="300"
+            class="order-1 flex w-5/12 justify-end"
+          >
             <h3 class="text-sm font-normal text-white md:text-base">
               Seminar, Awarding, & Puncak Acara
             </h3>
           </div>
           <!-- left -->
           <div
+            data-aos="fade"
             class="z-20 order-1 flex h-5 w-5 items-center rounded-full bg-primary-400"
           ></div>
-          <div class="order-1 flex w-5/12 justify-start">
+          <div
+            data-aos="fade-right"
+            data-aos-delay="500"
+            class="order-1 flex w-5/12 justify-start"
+          >
             <h3
               class="border-l-4 border-primary-400 bg-primary-75 px-2 py-2 text-xs font-normal text-neutral-900 md:py-3 md:px-3 md:text-sm"
             >
@@ -1280,5 +1364,13 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="../assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        mirror: false,
+        once: true,
+        duration: 500,
+      });
+    </script>
   </body>
 </html>

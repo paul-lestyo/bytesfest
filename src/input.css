@@ -20,6 +20,10 @@
   .bg-footer {
     @apply bg-gradient-to-b from-[#290f48] to-[#3F0089];
   }
+
+  .swiper-slide-custom {
+	@apply !flex !h-auto !w-11/12 !justify-center !rounded-sm sm:!w-8/12;
+  }
 }
 
 @layer utilities {

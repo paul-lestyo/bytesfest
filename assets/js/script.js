@@ -11,35 +11,35 @@ const countDownSecond = document.getElementById("countDownSecond");
 
 const linkLomba = {
   podcast: {
-    registrasi: "https://forms.gle/nxJc3fC9ChwnSYVb6",
+    registrasi: "https://docs.google.com/forms/d/e/1FAIpQLSeQce9We5fsdl_MkjUsbKLQm4-ORSo_QiY-RllK3k81XxCgiQ/viewform?usp=pp_url",
     konfirmasi:
-      "https://docs.google.com/forms/d/e/1FAIpQLSc078TmtZLzClEvBM5gz_52CS4u4TY2YPUd-q3hTw2tSCuG3A/viewform?usp=pp_url",
+      "https://forms.gle/jLjrH5XGd6XZ5k1UA",
   },
   web: {
-    registrasi: "https://forms.gle/6HZK7UKkTgTcWwRp6",
+    registrasi: "https://docs.google.com/forms/d/e/1FAIpQLSd1NFC3wGIWfMcYkA_XbfmDXLkhoErZMLagjvc5W2nR6ImLJg/viewform?usp=pp_url",
     konfirmasi:
-      "https://docs.google.com/forms/d/e/1FAIpQLSfFrz_lxOs2a-MRwODXIuE82DPXXoBMBv_PoT0uMUlgadoxSg/viewform?usp=pp_url",
+      "https://forms.gle/N7oDciue3XQhtTYm7",
   },
   fotografi: {
-    registrasi: "https://forms.gle/EJEyD3wNmoWBoNYi9",
+    registrasi: "https://docs.google.com/forms/d/e/1FAIpQLSc4VoD8_ZaMDVHmWYIlFJE81jOY3WRQF7fM0FC0eiK-X5spFg/viewform?usp=pp_url",
     konfirmasi:
-      "https://docs.google.com/forms/d/e/1FAIpQLSfod1uBOpjVxdO28g6JW_fU9Ed53x-UqdYm6I679NRttN2ZHQ/viewform?usp=pp_url",
+      "https://forms.gle/q9a3T9X8vt6wBiNe6",
   },
   essai: {
-    registrasi: "https://forms.gle/yZdr3mCWxVSEAA4K8",
+    registrasi: "https://docs.google.com/forms/d/e/1FAIpQLSdFqubvsqjy3FZQA92MCSVDcUjYx1JZAqsdtMqGz_2nxq2ADw/viewform?usp=pp_url",
     konfirmasi:
-      "https://docs.google.com/forms/d/e/1FAIpQLSf_HSg8_M7GrCiUoeSWGUH5QMQX6genEL34B9LWtCf5qrE8QA/viewform?usp=pp_url",
+      "https://forms.gle/P9m6eAKaqnoWrc2x7",
   },
   poster: {
-    registrasi: "https://forms.gle/BhoCbu73PPRbsN7j9",
+    registrasi: "https://docs.google.com/forms/d/e/1FAIpQLSeuCitGbPLSrnkToBwleTFaqOl8Yb6oPyi_ww6-XqA6ydPAdw/viewform?usp=pp_url",
     konfirmasi:
-      "https://docs.google.com/forms/d/e/1FAIpQLScJIlNG2myt_tMtgapEUsOdteCIhocd1mmFGtS8r6t8ed3U7A/viewform?usp=pp_url",
+      "https://forms.gle/bczaJyuLr7D7ztyP8",
   },
 };
 
 const linkSubmission = {
-  batch1: "https://pengumpulan.link1",
-  batch2: "https://pengumpulan.link2",
+  batch1: "https://docs.google.com/forms/d/e/1FAIpQLSdxliYAT5VvefJQbrU7vr_M0c70GmKUDmzSZg3qaFA58hcxkA/viewform?usp=pp_url",
+  batch2: "#",
 };
 
 window.onscroll = function () {

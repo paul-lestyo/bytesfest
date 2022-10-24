@@ -39,7 +39,7 @@ const linkLomba = {
 
 const linkSubmission = {
   batch1: "https://docs.google.com/forms/d/e/1FAIpQLSdxliYAT5VvefJQbrU7vr_M0c70GmKUDmzSZg3qaFA58hcxkA/viewform?usp=pp_url",
-  batch2: "#",
+  batch2: "https://docs.google.com/forms/d/e/1FAIpQLSfEzRPP0TiHFAWXiWPINB-YDJbGCaaWDYI_o1BHxfWE2njGNg/viewform?usp=pp_url",
 };
 
 window.onscroll = function () {

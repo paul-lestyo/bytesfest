@@ -3,6 +3,7 @@ const navbar = document.querySelector(".navigation");
 const mybutton = document.getElementById("btn-back-to-top");
 const modalSubmission = document.getElementById("modal-submission");
 const modalDaftar = document.getElementById("modal-daftar");
+const modalWebinar = document.getElementById("modal-webinar");
 
 const countDownDay = document.getElementById("countDownDay");
 const countDownHour = document.getElementById("countDownHour");
@@ -176,6 +177,29 @@ document
 document
   .getElementById("close-button-submission")
   .addEventListener("click", closeModalSubmission);
+
+  const closeModalWebinar = () => {
+	console.log("tes modal sub");
+	modalWebinar.classList.toggle("opacity-100");
+	modalWebinar.classList.toggle("opacity-0");
+	setTimeout(() => {
+	  modalWebinar.classList.toggle("hidden");
+	}, 300);
+  };
+
+  document
+  .getElementById("backdrop-webinar")
+  .addEventListener("click", closeModalWebinar);
+
+function moreInfoWebinar() {
+	event.preventDefault();
+  
+	modalWebinar.classList.toggle("hidden");
+	setTimeout(() => {
+	  modalWebinar.classList.toggle("opacity-0");
+	  modalWebinar.classList.toggle("opacity-100");
+	}, 100);
+  }
 
 function daftarLomba(lomba) {
   event.preventDefault();

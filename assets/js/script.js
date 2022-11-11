@@ -3,6 +3,8 @@ const navbar = document.querySelector(".navigation");
 const mybutton = document.getElementById("btn-back-to-top");
 const modalSubmission = document.getElementById("modal-submission");
 const modalDaftar = document.getElementById("modal-daftar");
+const modalWebinar = document.getElementById("modal-webinar");
+const modalRegistrasiWebinar = document.getElementById("modal-registrasi-webinar");
 
 const countDownDay = document.getElementById("countDownDay");
 const countDownHour = document.getElementById("countDownHour");
@@ -177,6 +179,44 @@ document
   .getElementById("close-button-submission")
   .addEventListener("click", closeModalSubmission);
 
+  const closeModalWebinar = () => {
+	console.log("tes modal sub");
+	modalWebinar.classList.toggle("opacity-100");
+	modalWebinar.classList.toggle("opacity-0");
+	setTimeout(() => {
+	  modalWebinar.classList.toggle("hidden");
+	}, 300);
+  };
+
+  document
+  .getElementById("backdrop-webinar")
+  .addEventListener("click", closeModalWebinar);
+
+  const closeModalRegistrasiWebinar = () => {
+	modalRegistrasiWebinar.classList.toggle("opacity-100");
+	modalRegistrasiWebinar.classList.toggle("opacity-0");
+	setTimeout(() => {
+	  modalRegistrasiWebinar.classList.toggle("hidden");
+	}, 300);
+  };
+
+  document
+  .getElementById("backdrop-registrasi-webinar")
+  .addEventListener("click", closeModalRegistrasiWebinar);
+document
+  .getElementById("close-button-registrasi-webinar")
+  .addEventListener("click", closeModalRegistrasiWebinar);
+
+function moreInfoWebinar() {
+	event.preventDefault();
+  
+	modalWebinar.classList.toggle("hidden");
+	setTimeout(() => {
+	  modalWebinar.classList.toggle("opacity-0");
+	  modalWebinar.classList.toggle("opacity-100");
+	}, 100);
+  }
+
 function daftarLomba(lomba) {
   event.preventDefault();
 
@@ -193,6 +233,16 @@ function daftarLomba(lomba) {
     modalDaftar.classList.toggle("opacity-100");
   }, 100);
 }
+
+function daftarWebinar() {
+	event.preventDefault();
+  
+	modalRegistrasiWebinar.classList.toggle("hidden");
+	setTimeout(() => {
+	  modalRegistrasiWebinar.classList.toggle("opacity-0");
+	  modalRegistrasiWebinar.classList.toggle("opacity-100");
+	}, 100);
+  }
 
 function submissionLomba() {
   event.preventDefault();

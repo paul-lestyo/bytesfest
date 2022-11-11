@@ -492,11 +492,95 @@
       <span
         class="absolute -top-10 left-1/2 block h-20 w-[2px] animate-pulse bg-neutral-500"
       ></span>
+      <!-- <span
+        class="absolute -bottom-10 left-1/2 block h-20 w-[2px] animate-pulse bg-neutral-500"
+      ></span> -->
+    </div>
+    <!-- DANGLE SECTION END -->
+
+
+	<!-- WEBINAR SECTION END -->
+    <div id="webinar" class="relative bg-primary-800 pt-10 pb-32 md:py-32">
+      <!-- container -->
+      <div class="mx-auto px-5 lg:w-[1200px] lg:px-0">
+        <div class="flex w-full flex-col lg:flex-row-reverse">
+
+          <div class="lg:flex lg:items-center text-center">
+            <!-- text-container -->
+            <div class="sm:px-10 md:px-16">
+              <h3
+                data-aos="fade-right"
+                class="text-shadow-hero-lg mb-1 text-center text-xl font-semibold tracking-wide sm:text-2xl md:text-3xl lg:text-5xl"
+              >
+                <span
+                  class="bg-gradient-to-r from-primary-100 to-cyan-300 bg-clip-text font-bold text-transparent"
+                  >Techminar</span
+                >
+              </h3>
+              <h5
+                data-aos="fade-right"
+                class="text-shadow-hero-md mb-3 text-center text-sm tracking-normal text-neutral-100 sm:text-sm md:mb-4 md:text-3xl"
+              >
+				Creativity and Innovation of Art in Technology
+              </h5>
+              <!-- underline-decoration -->
+              <div
+                data-aos="fade-right"
+                data-aos-duration="300"
+                class="mb-5 flex w-full justify-center"
+              >
+                <div class="h-[3px] w-1/3 bg-primary-100 my-4"></div>
+              </div>
+              <div data-aos="fade-right" data-aos-delay="50" class="">
+                <p
+                  class="mb-5 text-left md:!text-center md:text-xl text-xs leading-relaxed text-neutral-50 md:leading-loose lg:px-20"
+                >
+				Techminar merupakan puncak acara dari rangkaian BYTESFEST yang menjadi acara tahunan yang diadakan oleh HMP MIKROPTIK UNS.  "Creativity and Innovation of Art in Technology" merupakan tema Techminar pada tahun ini yang mengajak para peserta baik siswa, mahasiswa maupun masyarakat umum untuk menambah wawasan tentang teknologi khususnya penerapan teknologi di bidang seni.
+                </p>
+              </div>
+
+			  
+            </div>
+		</div>
+	</div>
+		<div class="text-center my-4 pt-4 flex w-full justify-center gap-10">
+			<button 
+				onclick="daftarWebinar()"
+				class="group relative box-border overflow-hidden rounded-sm bg-neutral-0 px-8 py-2 font-semibold text-primary-900 transition-all duration-300 md:px-10 md:py-3"
+			>
+				<p
+				class="relative z-30 transition-all duration-300 group-hover:text-white"
+				>
+				Register
+				</p>
+				<span
+				class="absolute top-0 left-0 block h-full w-0 bg-primary-200 shadow-[inset_0_0_0_1px_#fff] shadow-primary-0 transition-all duration-300 group-hover:w-full"
+				></span>
+			</button>
+			<button
+				onclick="moreInfoWebinar()"
+				class="group relative box-border overflow-hidden rounded-sm bg-neutral-0 px-8 py-2 font-semibold text-primary-900 transition-all duration-300 md:px-10 md:py-3"
+			>
+				<p
+				class="relative z-30 transition-all duration-300 group-hover:text-white"
+				>
+				More Info
+				</p>
+				<span
+				class="absolute top-0 left-0 block h-full w-0 bg-primary-200 shadow-[inset_0_0_0_1px_#fff] shadow-primary-0 transition-all duration-300 group-hover:w-full"
+				></span>
+			</button>
+		</div>
+      </div>
+      <!-- connecting section line -->
+      <!-- <span
+        class="absolute -top-10 left-1/2 block h-20 w-[2px] animate-pulse bg-neutral-500"
+      ></span> -->
       <span
         class="absolute -bottom-10 left-1/2 block h-20 w-[2px] animate-pulse bg-neutral-500"
       ></span>
     </div>
-    <!-- DANGLE SECTION END -->
+	<!-- WEBINAR SECTION END -->
 
     <!-- Slider main container -->
     <div class="bg-neutral-900" id="competition">
@@ -1284,6 +1368,77 @@
       aria-labelledby="modal-title"
       role="dialog"
       aria-modal="true"
+      id="modal-registrasi-webinar"
+    >
+      <div class="fixed inset-0 z-10 overflow-y-auto shadow-2xl">
+        <!-- backdrop -->
+        <div
+          class="fixed inset-0 z-20 bg-neutral-700 bg-opacity-75 backdrop-blur-sm transition-opacity duration-700"
+          id="backdrop-registrasi-webinar"
+        ></div>
+        <!-- modal-box -->
+        <div
+          class="absolute left-1/2 top-1/2 z-40 w-96 -translate-x-1/2 -translate-y-1/2 p-4 text-center sm:items-center sm:p-0"
+        >
+          <div
+            class="relative transform rounded-md border bg-primary-0 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-xl"
+          >
+            <!-- close-button -->
+            <button
+              id="close-button-registrasi-webinar"
+              class="group absolute right-2 top-2 z-50 text-neutral-400"
+            >
+              <img
+                src="/assets/img/icons/icons8-close-24.png"
+                alt=""
+                class="h-6 w-6 opacity-80 group-hover:opacity-50"
+              />
+            </button>
+            <div class="relative z-0 h-32 w-full">
+              <img
+                src="/assets/img/mascot-main.png"
+                class="absolute left-1/2 bottom-0 h-auto w-32 -translate-x-1/2"
+              />
+            </div>
+            <div class="relative z-50 rounded-md bg-primary-0">
+              <div class="relative">
+                <div style="text-align-last: center">
+                  <div class="mt-4 text-center">
+                    <h1
+                      class="z-[60] text-3xl font-semibold text-neutral-500"
+                      id="modal-title"
+                    >
+                      Gaskeun!!
+                    </h1>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-5 mt-2">
+                <p class="px-5 text-center text-sm text-neutral-500">
+                  Jangan lupa cek email kalian setelah proses registrasi selesai ya!
+                </p>
+              </div>
+              <div
+                class="flex h-20 w-full flex-col justify-center gap-3 bg-primary-25 px-5 text-center text-sm"
+              >
+                <a
+			  	  href="https://s.id/Techminar"
+                  target="_blank"
+                  class="inline-block rounded-sm bg-neutral-600 px-6 py-3 text-neutral-0 shadow-lg"
+                >
+                  Registrasi
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="relative z-50 hidden opacity-0 transition duration-300"
+      aria-labelledby="modal-title"
+      role="dialog"
+      aria-modal="true"
       id="modal-daftar"
     >
       <div class="fixed inset-0 z-10 overflow-y-auto shadow-2xl">
@@ -1355,6 +1510,26 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div
+      class="relative z-50 hidden opacity-0 transition duration-300"
+      aria-labelledby="modal-title"
+      role="dialog"
+      aria-modal="true"
+      id="modal-webinar"
+    >
+      <div class="fixed inset-0 z-10 overflow-y-auto shadow-2xl">
+        <!-- backdrop -->
+        <div
+          class="fixed inset-0 z-20 bg-neutral-700 bg-opacity-75 backdrop-blur-sm transition-opacity duration-700"
+          id="backdrop-webinar"
+        ></div>
+        <!-- modal-box -->
+        <div
+          class="absolute left-1/2 top-1/2 z-40 w-96 -translate-x-1/2 -translate-y-1/2 p-4 text-center sm:items-center sm:p-0"
+        >
+			<img src="../assets/img/pamflet.png" alt="Webinar Bytesfest 2022">
       </div>
     </div>
 
